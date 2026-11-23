@@ -1,0 +1,9 @@
+.venv/
+GNSS*/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+*.zip
+.env
+.env.*
