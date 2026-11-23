@@ -1,0 +1,15 @@
+{
+  "change": "PR curves preserve every recall transition; LaTeX rendered with optional formatter",
+  "models_refit": false,
+  "thresholds_retuned": false,
+  "numeric_artifacts_unchanged": true,
+  "numeric_artifact_sha256": {
+    "final_test_metrics_all_models.csv": "e8e14b14aaebbcf9c31cf35a2697cf301e72dfc09eaa6af4b2e435450cea8dd7",
+    "final_test_scores.npz": "75bd65051a22c320a6b7c5f6d996e181eec6b782e4c0adf532562c02e022cbb5"
+  },
+  "publication_source_sha256": "2dfde35f547793a3a67bdebaba9ba81b8f6f837a2ff083dcfff19efa070eb657",
+  "formatting_versions": {
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.4"
+  }
+}

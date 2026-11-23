@@ -1,0 +1,5 @@
+{
+  "reference_positives": 119,
+  "mismatches": 0,
+  "interpretation": "deterministic S4 label consistency, not ML validation"
+}

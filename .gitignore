@@ -7,3 +7,11 @@ __pycache__/
 *.zip
 .env
 .env.*
+
+# Local data, fresh experiments, and build/download caches.
+data/
+runs/
+q4_paper_results/
+.pytest_cache/
+*.jar
+*.class

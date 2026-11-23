@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this research code, cite this repository and the underlying Tsai and Lin (2021) methodology."
+title: "Ionospheric S4 Anomaly Detection: 2019 Study III OCC Ensembles"
+type: software
+authors:
+  - family-names: Abdullah
+    given-names: Yousha
+version: "1.0.0"
+repository-code: "https://github.com/YoushaAbdullah/Ionosphere-S4-Anomaly-Detection"
+abstract: "A documented temporal-validation adaptation of feature-selection and one-class classifier ensembles for agreement with an S4-derived scintillation reference."
+keywords:
+  - GNSS
+  - ionospheric scintillation
+  - one-class classification
+  - anomaly detection
+  - reproducible research

@@ -1,0 +1,817 @@
+
+===== START ORIGINAL NOTEBOOK CELL 3 =====
+ADAPTER: supplying original 2019.zip to files.upload()
+ZIP file: 2019.zip
+CSV files found: 221
+
+========== FILE LOADING SUMMARY ==========
+Total CSV files: 221
+Successfully loaded: 221
+Failed files: 0
+
+========== OBSERVATIONS BY YEAR ==========
+YYYY
+2019    2733017
+2020          9
+
+Years found in dataset:
+[np.int64(2019), np.int64(2020)]
+===== COMPLETED CELL 3 IN 15.47s =====
+
+===== START ORIGINAL NOTEBOOK CELL 6 =====
+
+INITIAL DATA QUALITY ASSESSMENT
+Total observations: 2733026
+Total columns: 20
+
+Missing values in original dataset:
+YYYY                                 0
+MM                                   0
+DD                                   0
+Second                               0
+Total satellite                      0
+PRN                                  0
+Azimuth                              0
+Elevation                            0
+L1 CNo                               0
+Total S4                             0
+Correction to total S4               0
+60-second phase sigma                0
+Average of Carrier divergence        0
+Sigma of Carrier Divergence          0
+TEC at TOW                       54090
+L1 Lock time                         0
+Channel status                       0
+L2 Lock Time                         0
+L2 CNo                               0
+_DATE                                0
+dtype: int64
+
+Duplicate observations:
+Duplicate rows: 0
+
+Date coverage:
+Start: 2019-01-01 00:00:00
+End: 2020-01-01 00:00:00
+Unique dates: 223
+
+Satellite coverage:
+Unique PRNs: 34
+PRNs: [np.int64(1), np.int64(2), np.int64(3), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10), np.int64(11), np.int64(12), np.int64(13), np.int64(14), np.int64(15), np.int64(16), np.int64(17), np.int64(18), np.int64(19), np.int64(20), np.int64(21), np.int64(22), np.int64(23), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(31), np.int64(32), np.int64(120), np.int64(124), np.int64(126)]
+
+RECEIVER-SPECIFIC QUALITY FILTERING
+Initial observations: 2733026
+Removed by L1 Lock time: 60318
+Removed by Elevation: 888748
+Total observations removed: 949066
+Remaining observations: 1783960
+
+STEP 3: S4 CORRECTION
+Corrected S4 calculated.
+Corrected S4 minimum: 0.0
+Corrected S4 maximum: 0.36631378625435324
+
+CORRECTED S4 STATISTICS
+count    1.783960e+06
+mean     4.609892e-02
+std      2.327560e-02
+min      0.000000e+00
+25%      2.908608e-02
+50%      4.116892e-02
+75%      5.802474e-02
+max      3.663138e-01
+Name: Corrected_S4, dtype: float64
+
+Negative corrected S4 values: 0
+Missing corrected S4 values: 0
+Infinite corrected S4 values: 0
+
+STEP 4: INVALID MEASUREMENT REMOVAL
+Observations before removal: 1783960
+Observations after removal: 1783960
+Invalid observations removed: 0
+
+SCINTILLATION REFERENCE LABEL DISTRIBUTION
+                        Observations  Percentage (%)
+Below S4 threshold (0)       1783376       99.967264
+Meets S4 threshold (1)           584        0.032736
+
+S4 reference threshold: 0.2
+Total labelled observations: 1783960
+
+REFERENCE LABEL VERIFICATION
+Incorrect LABEL assignments: 0
+Minimum corrected S4: 0.0
+Maximum corrected S4: 0.36631378625435324
+Mean corrected S4: 0.04609891958656713
+Median corrected S4: 0.04116892031618026
+Standard deviation: 0.023275595271792224
+
+STEP 5: MULTIPATH INVESTIGATION
+
+Carrier divergence summary:
+       Average of Carrier divergence  Sigma of Carrier Divergence
+count                   1.783960e+06                 1.783960e+06
+mean                   -1.125559e+01                 5.377719e-02
+std                     5.948425e+00                 4.043010e-02
+min                    -6.041380e+01                 1.900000e-03
+25%                    -1.547540e+01                 2.670000e-02
+50%                    -1.103040e+01                 4.440000e-02
+75%                    -7.007775e+00                 7.070000e-02
+max                     4.672160e+01                 7.298600e+00
+PLOT: cell_06_plot_001.png
+PLOT: cell_06_plot_002.png
+
+Correlation with Corrected S4:
+Corrected_S4                     1.000000
+Average of Carrier divergence    0.066998
+Sigma of Carrier Divergence      0.314250
+Name: Corrected_S4, dtype: float64
+
+IMPORTANT:
+High carrier divergence may indicate multipath contamination.
+Do not remove observations using an arbitrary cutoff.
+Review the plots before deciding whether an additional
+receiver-specific multipath rejection rule is justified.
+
+STEP 6: MISSING VALUE CHECK
+Missing values in each column:
+YYYY                                0
+MM                                  0
+DD                                  0
+Second                              0
+Total satellite                     0
+PRN                                 0
+Azimuth                             0
+Elevation                           0
+L1 CNo                              0
+Total S4                            0
+Correction to total S4              0
+60-second phase sigma               0
+Average of Carrier divergence       0
+Sigma of Carrier Divergence         0
+TEC at TOW                       6843
+L1 Lock time                        0
+Channel status                      0
+L2 Lock Time                        0
+L2 CNo                              0
+_DATE                               0
+Corrected_S4                        0
+LABEL                               0
+dtype: int64
+
+Missing TEC observations: 6843
+Observations retained despite missing TEC: 6843
+
+STEP 7: DUPLICATE OBSERVATIONS
+Number of duplicate rows: 0
+Number of duplicated observation groups: 0
+No duplicate observations found.
+
+DATA CONTINUITY
+Number of time gaps greater than 60 seconds: 5396
+Largest time gap (seconds): 80640.0
+
+=======================================================
+FINAL PREPROCESSING SUMMARY
+=======================================================
+Original observations: 2733026
+Final cleaned observations: 1783960
+Observation dates: 223
+Unique satellite PRNs: 31
+Date range: 2019-01-01 00:00:00 to 2020-01-01 00:00:00
+Corrected S4 range: 0.0 to 0.36631378625435324
+Final number of columns: 22
+
+REFERENCE LABEL COUNTS
+LABEL 0: 1783376
+LABEL 1: 584
+
+MISSING PREDICTOR VALUES
+L1 CNo                              0
+L2 CNo                              0
+Elevation                           0
+Azimuth                             0
+TEC at TOW                       6843
+Average of Carrier divergence       0
+Sigma of Carrier Divergence         0
+Total satellite                     0
+dtype: int64
+
+CORRECTED S4 SUMMARY
+count    1.783960e+06
+mean     4.609892e-02
+std      2.327560e-02
+min      0.000000e+00
+25%      2.908608e-02
+50%      4.116892e-02
+75%      5.802474e-02
+max      3.663138e-01
+Name: Corrected_S4, dtype: float64
+
+Final DataFrame: df_clean
+===== COMPLETED CELL 6 IN 9.34s =====
+
+===== START ORIGINAL NOTEBOOK CELL 9 =====
+============================================================
+STEP 1: CORRECTED S4 DISTRIBUTION
+============================================================
+count    1.783960e+06
+mean     4.609892e-02
+std      2.327560e-02
+min      0.000000e+00
+25%      2.908608e-02
+50%      4.116892e-02
+75%      5.802474e-02
+max      3.663138e-01
+Name: Corrected_S4, dtype: float64
+PLOT: cell_09_plot_003.png
+
+============================================================
+STEP 2: CREATE BINARY CLASSIFICATION LABEL
+============================================================
+Label definition:
+0 = Corrected S4 < 0.20
+1 = Corrected S4 >= 0.20
+
+============================================================
+STEP 3: CLASS DISTRIBUTION AT THRESHOLD 0.20
+============================================================
+            Class   Count  Percentage
+Non-scintillation 1783376   99.967264
+    Scintillation     584    0.032736
+
+============================================================
+STEP 4: SENSITIVITY ANALYSIS AT THRESHOLD 0.30
+============================================================
+            Class   Count  Percentage
+Non-scintillation 1783928   99.998206
+    Scintillation      32    0.001794
+
+Maximum corrected S4: 0.36631378625435324
+
+============================================================
+STEP 5: FEATURE SELECTION
+============================================================
+
+Selected model input features:
+- L1 CNo
+- L2 CNo
+- Azimuth_sin
+- Azimuth_cos
+- Elevation
+- Average of Carrier divergence
+- Corrected_S4
+- TEC at TOW
+- Sigma of Carrier Divergence
+
+Reference column: LABEL
+Evaluation measurement: Corrected_S4
+
+Excluded from model input:
+- Total S4
+- Correction to total S4
+- LABEL
+- YYYY
+- MM
+- DD
+- Second
+- _DATE
+- PRN
+- Total satellite
+- Azimuth
+
+MISSING VALUES IN SELECTED FEATURES
+L1 CNo                              0
+L2 CNo                              0
+Azimuth_sin                         0
+Azimuth_cos                         0
+Elevation                           0
+Average of Carrier divergence       0
+Corrected_S4                        0
+TEC at TOW                       6843
+Sigma of Carrier Divergence         0
+dtype: int64
+
+INFINITE VALUES IN SELECTED FEATURES
+L1 CNo                           0
+L2 CNo                           0
+Azimuth_sin                      0
+Azimuth_cos                      0
+Elevation                        0
+Average of Carrier divergence    0
+Corrected_S4                     0
+TEC at TOW                       0
+Sigma of Carrier Divergence      0
+dtype: int64
+
+FEATURE SUMMARY STATISTICS
+                                   count       mean  ...        75%        max
+L1 CNo                         1783960.0  50.297450  ...  52.358600  57.831100
+L2 CNo                         1783960.0  42.191054  ...  44.313000  50.461200
+Azimuth_sin                    1783960.0  -0.011230  ...   0.820916   1.000000
+Azimuth_cos                    1783960.0  -0.263469  ...   0.229152   0.920808
+Elevation                      1783960.0  43.466024  ...  53.209000  73.172600
+Average of Carrier divergence  1783960.0 -11.255587  ...  -7.007775  46.721600
+Corrected_S4                   1783960.0   0.046099  ...   0.058025   0.366314
+TEC at TOW                     1777117.0   6.980970  ...   8.772500  34.382600
+Sigma of Carrier Divergence    1783960.0   0.053777  ...   0.070700   7.298600
+
+[9 rows x 8 columns]
+
+FEATURE RANGE CHECKS
+L1 CNo: 0 potentially invalid observations
+L2 CNo: 0 potentially invalid observations
+Azimuth: 0 potentially invalid observations
+TEC at TOW: 3221 potentially invalid observations
+Sigma of Carrier Divergence: 0 potentially invalid observations
+
+Note: These checks identify values for investigation. Do not automatically remove unusual values without receiver-specific justification.
+
+============================================================
+STEP 6: CHRONOLOGICAL DATA SPLIT
+============================================================
+
+TRAINING DATA
+---------------------------------------------
+Observations: 1246808
+Unique dates: 156
+Date range: 2019-01-01 00:00:00 to 2019-10-26 00:00:00
+
+Reference label distribution:
+Below S4 threshold: 1,246,427 (99.9694%)
+Meets S4 threshold: 381 (0.0306%)
+
+VALIDATION DATA
+---------------------------------------------
+Observations: 264410
+Unique dates: 33
+Date range: 2019-10-27 00:00:00 to 2019-11-28 00:00:00
+
+Reference label distribution:
+Below S4 threshold: 264,326 (99.9682%)
+Meets S4 threshold: 84 (0.0318%)
+
+TESTING DATA
+---------------------------------------------
+Observations: 272742
+Unique dates: 34
+Date range: 2019-11-29 00:00:00 to 2020-01-01 00:00:00
+
+Reference label distribution:
+Below S4 threshold: 272,623 (99.9564%)
+Meets S4 threshold: 119 (0.0436%)
+
+DATE OVERLAP CHECK
+Training-validation overlap: 0
+Training-testing overlap: 0
+Validation-testing overlap: 0
+
+Chronological split completed.
+
+============================================================
+STEP 7: NORMAL-ONLY TRAINING DATA
+============================================================
+All training observations: 1246808
+Training observations used: 1246427
+High-S4 training observations included: 381
+
+Validation observations: 264410
+Testing observations: 272742
+
+IMPUTATION VALUES
+                      Feature  Training median used
+                       L1 CNo             50.236000
+                       L2 CNo             42.324700
+                  Azimuth_sin             -0.048055
+                  Azimuth_cos             -0.324908
+                    Elevation             41.485400
+Average of Carrier divergence            -11.118600
+                 Corrected_S4              0.041542
+                   TEC at TOW              7.122800
+  Sigma of Carrier Divergence              0.045600
+
+Missing values after imputation:
+Training: 0
+Validation: 0
+Testing: 0
+
+============================================================
+STEP 8: FEATURE SCALING
+============================================================
+
+SCALED TRAINING FEATURE MEANS:
+L1 CNo                           0.0
+L2 CNo                          -0.0
+Azimuth_sin                      0.0
+Azimuth_cos                      0.0
+Elevation                       -0.0
+Average of Carrier divergence   -0.0
+Corrected_S4                     0.0
+TEC at TOW                       0.0
+Sigma of Carrier Divergence      0.0
+dtype: float64
+
+SCALED TRAINING FEATURE STANDARD DEVIATIONS:
+L1 CNo                           1.0
+L2 CNo                           1.0
+Azimuth_sin                      1.0
+Azimuth_cos                      1.0
+Elevation                        1.0
+Average of Carrier divergence    1.0
+Corrected_S4                     1.0
+TEC at TOW                       1.0
+Sigma of Carrier Divergence      1.0
+dtype: float64
+
+FINAL MODEL INPUT CHECK
+Training: Missing = 0, Infinite = 0
+Validation: Missing = 0, Infinite = 0
+Testing: Missing = 0, Infinite = 0
+
+FEATURE SCALING COMPLETED.
+
+============================================================
+STEP 9: FINAL MODEL INPUT VERIFICATION
+============================================================
+
+MODEL INPUT FEATURES:
+- L1 CNo
+- L2 CNo
+- Azimuth_sin
+- Azimuth_cos
+- Elevation
+- Average of Carrier divergence
+- Corrected_S4
+- TEC at TOW
+- Sigma of Carrier Divergence
+
+ISOLATION FOREST INPUTS:
+Training: (1246427, 9)
+Validation: (264410, 9)
+Testing: (272742, 9)
+
+LOF AND ONE-CLASS SVM INPUTS:
+Training: (1246427, 9)
+Validation: (264410, 9)
+Testing: (272742, 9)
+
+REFERENCE VALUES KEPT SEPARATELY:
+Validation LABEL: (264410,)
+Testing LABEL: (272742,)
+Validation corrected S4: (264410,)
+Testing corrected S4: (272742,)
+
+TRAINING DATA COMPOSITION:
+Total training observations: 1246427
+Observations below S4 threshold: 1246427
+Observations meeting S4 threshold: 381
+
+ALL PREPARATION STAGES COMPLETED.
+
+MODEL FEATURE VERIFICATION
+Number of features: 9
+Features: ['L1 CNo', 'L2 CNo', 'Azimuth_sin', 'Azimuth_cos', 'Elevation', 'Average of Carrier divergence', 'Corrected_S4', 'TEC at TOW', 'Sigma of Carrier Divergence']
+Feature verification passed.
+===== COMPLETED CELL 9 IN 14.41s =====
+
+===== START ORIGINAL NOTEBOOK CELL 12 =====
+
+============================================================
+3.1 CORRECTED S4 DISTRIBUTION
+============================================================
+count    1.783960e+06
+mean     4.609892e-02
+std      2.327560e-02
+min      0.000000e+00
+25%      2.908608e-02
+50%      4.116892e-02
+75%      5.802474e-02
+max      3.663138e-01
+Name: Corrected_S4, dtype: float64
+PLOT: cell_12_plot_004.png
+
+============================================================
+3.2 CLASS DISTRIBUTION
+============================================================
+   Reference group  Observations  Percentage (%)
+Below S4 threshold       1783376       99.967264
+Meets S4 threshold           584        0.032736
+PLOT: cell_12_plot_005.png
+
+============================================================
+3.3 FEATURE DISTRIBUTIONS
+============================================================
+
+FEATURE SUMMARY STATISTICS
+                                   count     mean  ...      75%      max
+L1 CNo                         1783960.0  50.2974  ...  52.3586  57.8311
+L2 CNo                         1783960.0  42.1911  ...  44.3130  50.4612
+Azimuth_sin                    1783960.0  -0.0112  ...   0.8209   1.0000
+Azimuth_cos                    1783960.0  -0.2635  ...   0.2292   0.9208
+Elevation                      1783960.0  43.4660  ...  53.2090  73.1726
+Average of Carrier divergence  1783960.0 -11.2556  ...  -7.0078  46.7216
+Corrected_S4                   1783960.0   0.0461  ...   0.0580   0.3663
+TEC at TOW                     1777117.0   6.9810  ...   8.7725  34.3826
+Sigma of Carrier Divergence    1783960.0   0.0538  ...   0.0707   7.2986
+
+[9 rows x 9 columns]
+PLOT: cell_12_plot_006.png
+
+============================================================
+3.4 LOW-S4 VS HIGH-S4 FEATURE COMPARISON
+============================================================
+
+FEATURE STATISTICS BY S4 REFERENCE GROUP
+        L1 CNo                   ... Sigma of Carrier Divergence
+          mean   median     std  ...                        mean  median     std
+LABEL                            ...
+0      50.2990  50.1988  2.8008  ...                      0.0538  0.0444  0.0404
+1      45.5714  45.5999  0.9353  ...                      0.0940  0.0739  0.0671
+
+[2 rows x 27 columns]
+PLOT: cell_12_plot_007.png
+
+============================================================
+3.5 FEATURE CORRELATION ANALYSIS
+============================================================
+
+SPEARMAN CORRELATION MATRIX
+                               L1 CNo  ...  Sigma of Carrier Divergence
+L1 CNo                          1.000  ...                       -0.245
+L2 CNo                          0.786  ...                       -0.198
+Azimuth_sin                    -0.080  ...                        0.038
+Azimuth_cos                    -0.378  ...                        0.137
+Elevation                       0.852  ...                       -0.229
+Average of Carrier divergence  -0.162  ...                        0.062
+Corrected_S4                   -0.592  ...                        0.337
+TEC at TOW                     -0.286  ...                        0.152
+Sigma of Carrier Divergence    -0.245  ...                        1.000
+
+[9 rows x 9 columns]
+PLOT: cell_12_plot_008.png
+
+FEATURE PAIRS WITH ABSOLUTE CORRELATION >= 0.70
+  Feature 1  Feature 2  Spearman correlation
+0    L1 CNo     L2 CNo              0.785575
+1    L1 CNo  Elevation              0.851918
+2    L2 CNo  Elevation              0.830527
+
+============================================================
+3.6 TEMPORAL OCCURRENCE ANALYSIS
+============================================================
+
+HOURLY OCCURRENCE RATE
+    Hour  Total_Observations  Scintillation_Observations  Occurrence_Rate (%)
+0      0               76792                           5               0.0065
+1      1               77797                           3               0.0039
+2      2               76760                           5               0.0065
+3      3               75093                          12               0.0160
+4      4               75259                           5               0.0066
+5      5               76139                          16               0.0210
+6      6               76799                          25               0.0326
+7      7               75951                          27               0.0355
+8      8               76054                          34               0.0447
+9      9               74909                          27               0.0360
+10    10               76775                          35               0.0456
+11    11               75798                          25               0.0330
+12    12               72968                          37               0.0507
+13    13               71543                          39               0.0545
+14    14               69968                          43               0.0615
+15    15               69376                          32               0.0461
+16    16               70062                          39               0.0557
+17    17               70096                          37               0.0528
+18    18               71073                          29               0.0408
+19    19               72408                          36               0.0497
+20    20               74068                          27               0.0365
+21    21               74583                          23               0.0308
+22    22               76807                          14               0.0182
+23    23               76882                           9               0.0117
+PLOT: cell_12_plot_009.png
+
+MONTHLY OCCURRENCE RATE
+    Month  Total_Observations  ...  Occurrence_Rate (%)  Month_Name
+0       1            188246.0  ...               0.0382     January
+1       2            213923.0  ...               0.0257    February
+2       3            236931.0  ...               0.0257       March
+3       4            189679.0  ...               0.0332       April
+4       5             68987.0  ...               0.0159         May
+5       6                 NaN  ...                  NaN        June
+6       7                 NaN  ...                  NaN        July
+7       8                 NaN  ...                  NaN      August
+8       9            148712.0  ...               0.0309   September
+9      10            242236.0  ...               0.0363     October
+10     11            239343.0  ...               0.0309    November
+11     12            255903.0  ...               0.0445    December
+
+[12 rows x 5 columns]
+PLOT: cell_12_plot_010.png
+
+OCCURRENCE RATE BY TIME PERIOD
+         Time_Period  ...  Occurrence_Rate (%)
+0      Night (00-05)  ...               0.0100
+1    Morning (06-11)  ...               0.0379
+2  Afternoon (12-17)  ...               0.0535
+3    Evening (18-23)  ...               0.0310
+
+[4 rows x 4 columns]
+PLOT: cell_12_plot_011.png
+
+HIGHEST OCCURRENCE RATES
+Hour: 14:00 (0.0615%)
+Month: December (0.0445%)
+Time period: Afternoon (12-17) (0.0535%)
+
+IMPORTANT: Months without observations are missing coverage, not months with zero scintillation.
+Time values represent dataset clock time; do not call them local time or UT unless the timezone is confirmed.
+
+============================================================
+3.7 SATELLITE AND ELEVATION ANALYSIS
+============================================================
+
+OCCURRENCE RATE BY SATELLITE PRN
+     Total_Observations  High_S4_Observations  Occurrence_Rate (%)
+PRN
+1                 54167                   185               0.3415
+8                 64550                   147               0.2277
+26                62472                   111               0.1777
+27                59262                    49               0.0827
+15                60045                    13               0.0217
+5                 65275                    11               0.0169
+16                66510                     9               0.0135
+13                55915                     7               0.0125
+10                60097                     7               0.0116
+31                64240                     7               0.0109
+28                68434                     7               0.0102
+6                 68468                     7               0.0102
+23                50553                     5               0.0099
+20                60145                     4               0.0067
+11                46066                     3               0.0065
+29                50320                     3               0.0060
+30                50039                     2               0.0040
+32                67406                     2               0.0030
+9                 50609                     1               0.0020
+7                 54637                     1               0.0018
+19                67348                     1               0.0015
+14                67964                     1               0.0015
+17                68803                     1               0.0015
+12                50476                     0               0.0000
+2                 69617                     0               0.0000
+3                 49914                     0               0.0000
+18                29699                     0               0.0000
+24                48007                     0               0.0000
+22                51903                     0               0.0000
+21                51140                     0               0.0000
+25                49879                     0               0.0000
+PLOT: cell_12_plot_012.png
+scintillation_anomaly_detection.ipynb:cell-12:588: UserWarning: Creating legend with loc="best" can be slow with large amounts of data.
+PLOT: cell_12_plot_013.png
+
+HIGH-S4 OCCURRENCE BY ELEVATION RANGE
+  Elevation_Group  ...  Occurrence_Rate (%)
+0        [25, 35)  ...               0.0995
+1        [35, 45)  ...               0.0002
+2        [45, 55)  ...               0.0000
+3        [55, 65)  ...               0.0000
+4        [65, 75)  ...               0.0000
+5        [75, 90)  ...                  NaN
+
+[6 rows x 4 columns]
+PLOT: cell_12_plot_014.png
+
+============================================================
+3.8 TEMPORAL CLUSTERING AND EVENT BEHAVIOUR
+============================================================
+
+POSITIVE RUN SUMMARY
+Total positive observations: 584
+Total computationally grouped positive runs: 570
+Positive observations accounted for: 584
+
+Positive run duration statistics:
+count    570.000000
+mean       0.024561
+std        0.195090
+min        0.000000
+25%        0.000000
+50%        0.000000
+75%        0.000000
+max        2.000000
+Name: Duration_Minutes, dtype: float64
+
+NUMBER OF POSITIVE OBSERVATIONS PER RUN
+   Positive_Observations_Per_Run  Number_of_Runs
+0                              1             560
+1                              2               6
+2                              3               4
+PLOT: cell_12_plot_015.png
+
+POSITIVE RUN DURATION DISTRIBUTION
+   Duration_Minutes  Number_of_Runs
+0               0.0             560
+1               1.0               6
+2               2.0               4
+PLOT: cell_12_plot_016.png
+
+TIME GAPS BETWEEN POSITIVE RUNS
+count       547.000000
+mean       9962.038391
+std       40783.089539
+min           2.000000
+25%        1436.000000
+50%        1436.000000
+75%        2871.000000
+max      455188.000000
+Name: Gap_From_Previous_Run_Minutes, dtype: float64
+PLOT: cell_12_plot_017.png
+
+POSITIVE RUNS LASTING AT LEAST TWO MINUTES
+Total positive runs: 570
+Runs lasting at least two minutes: 4
+Positive observations contained in these runs: 12
+    Event_ID  PRN  ...    Previous_Run_End Gap_From_Previous_Run_Minutes
+34      16_4   16  ... 2019-11-01 13:41:00                        5763.0
+274     26_4   26  ... 2019-01-03 11:01:00                        1345.0
+380     27_8   27  ... 2019-03-22 08:03:00                        2835.0
+353    27_21   27  ... 2019-04-05 07:05:00                       12894.0
+
+[4 rows x 10 columns]
+
+FINAL POSITIVE RUN SUMMARY
+Total high-S4 observations: 584
+Total positive runs: 570
+Single-observation runs: 560
+Runs lasting at least two minutes: 4
+Maximum run duration (minutes): 2.0
+
+NOTE: These runs are defined using the selected one-minute continuity rule. They should not automatically be interpreted as independent physical scintillation events.
+===== COMPLETED CELL 12 IN 30.06s =====
+
+===== START ORIGINAL NOTEBOOK CELL 15 =====
+Paper-based output directory: results/2019
+===== COMPLETED CELL 15 IN 0.43s =====
+
+===== START ORIGINAL NOTEBOOK CELL 17 =====
+===== COMPLETED CELL 17 IN 0.00s =====
+
+===== START ORIGINAL NOTEBOOK CELL 19 =====
+===== COMPLETED CELL 19 IN 0.00s =====
+
+===== START ORIGINAL NOTEBOOK CELL 21 =====
+===== COMPLETED CELL 21 IN 0.00s =====
+
+===== START ORIGINAL NOTEBOOK CELL 23 =====
+===== COMPLETED CELL 23 IN 0.00s =====
+
+===== START ORIGINAL NOTEBOOK CELL 25 =====
+===== COMPLETED CELL 25 IN 0.00s =====
+
+===== START ORIGINAL NOTEBOOK CELL 27 =====
+===== COMPLETED CELL 27 IN 0.00s =====
+
+===== START ORIGINAL NOTEBOOK CELL 29 =====
+Downloading pinned dependency: weka-stable-3.8.6.jar
+Downloading pinned dependency: bounce-0.18.jar
+Verified and reused all five numerical CV folds; no test metrics used.
+Frozen paper AUC champion: HET_TOP_02
+Frozen detection F1 champion: HET_TOP_09
+final: selecting GA_K10 on 5,000 normal rows
+final: selecting C45_K10 on 5,000 normal rows
+final: selecting GA_K100 on 5,000 normal rows
+final: selecting C45_K100 on 5,000 normal rows
+final: fitting LOF|BASE (5,000 normal draws)
+final: fitting OCSVM|BASE (5,000 normal draws)
+final: fitting IFOREST|BASE (5,000 normal draws)
+final: fitting LOF|PCA (5,000 normal draws)
+final: fitting OCSVM|PCA (5,000 normal draws)
+final: fitting IFOREST|PCA (5,000 normal draws)
+final: fitting LOF|GA_K10 (5,000 normal draws)
+final: fitting OCSVM|GA_K10 (5,000 normal draws)
+final: fitting LOF|C45_K10 (5,000 normal draws)
+final: fitting IFOREST|GA_K100 (5,000 normal draws)
+final: fitting OCSVM|C45_K100 (5,000 normal draws)
+final: fitting IFOREST|C45_K100 (5,000 normal draws)
+PLOT: cell_29_plot_018.png
+PLOT: cell_29_plot_019.png
+PLOT: cell_29_plot_020.png
+PLOT: cell_29_plot_021.png
+PLOT: cell_29_plot_022.png
+PLOT: cell_29_plot_023.png
+PLOT: cell_29_plot_024.png
+
+STUDY III PRIMARY RESULTS — paper 0.5 rule; families chosen on development CV:
+                      Model   TP      FP  ...       MCC   ROC_AUC  Average_Precision
+0                  LOF_BASE  101    1755  ...  0.213964  0.994804           0.427084
+1                OCSVM_BASE  119  127095  ...  0.022346  0.999835           0.688173
+2              IFOREST_BASE  119  129878  ...  0.021893  0.988474           0.050731
+3       PAPER_REPORTED_TRIO  116    2291  ...  0.215783  0.998778           0.560103
+4                 OCSVM_PCA  119  124060  ...  0.022852  0.999879           0.731920
+5  HOMO_OCSVM_PCA__OCSVM_GA  119  122286  ...  0.023154  0.999900           0.771821
+6                HET_TOP_10  119   49529  ...  0.044288  0.999274           0.624701
+7                HET_TOP_02  119  122286  ...  0.023154  0.999900           0.771821
+8                HET_TOP_09  119   39978  ...  0.050325  0.999188           0.633725
+
+[9 rows x 11 columns]
+Result archive: results/2019.zip
+===== COMPLETED CELL 29 IN 541.36s =====
+ALL ORIGINAL CODE CELLS COMPLETED

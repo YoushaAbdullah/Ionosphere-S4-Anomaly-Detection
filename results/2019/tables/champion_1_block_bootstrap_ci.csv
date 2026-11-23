@@ -1,0 +1,9 @@
+Model,Threshold_Method,Metric,Lower_95pct,Upper_95pct,Usable_Resamples,Resampling_Unit
+OCSVM_PCA,Paper_0.5,Precision,0.0006716971938703779,0.0013443530770315037,500,whole observation date
+OCSVM_PCA,Paper_0.5,Recall,1.0,1.0,500,whole observation date
+OCSVM_PCA,Paper_0.5,F1,0.001342492639121376,0.002685096292063065,500,whole observation date
+OCSVM_PCA,Paper_0.5,F2,0.0033494866055308685,0.006685811585839511,500,whole observation date
+OCSVM_PCA,Paper_0.5,FPR,0.4396734671675419,0.47172098616088654,500,whole observation date
+OCSVM_PCA,Paper_0.5,Specificity,0.5282790138391135,0.560326532832458,500,whole observation date
+OCSVM_PCA,Paper_0.5,Balanced_Accuracy,0.7641395069195568,0.780163266416229,500,whole observation date
+OCSVM_PCA,Paper_0.5,MCC,0.01919744558503193,0.026789095919030538,500,whole observation date

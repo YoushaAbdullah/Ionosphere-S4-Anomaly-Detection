@@ -1,0 +1,7 @@
+# Keep generated research artifacts out of default review/statistics views.
+results/** linguist-generated=true
+results/**/README.md linguist-generated=false
+*.ipynb text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf

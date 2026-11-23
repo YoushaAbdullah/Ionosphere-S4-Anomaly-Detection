@@ -1,0 +1,6 @@
+Champion_Number,Model,Primary_Threshold_Method
+1,OCSVM_PCA,Paper_0.5
+2,HOMO_OCSVM_PCA__OCSVM_GA,Paper_0.5
+3,HET_TOP_10,Paper_0.5
+4,HET_TOP_02,Paper_0.5
+5,HET_TOP_09,Paper_0.5

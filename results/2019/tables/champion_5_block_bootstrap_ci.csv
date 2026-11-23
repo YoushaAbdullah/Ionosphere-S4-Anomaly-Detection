@@ -1,0 +1,9 @@
+Model,Threshold_Method,Metric,Lower_95pct,Upper_95pct,Usable_Resamples,Resampling_Unit
+HET_TOP_09,Paper_0.5,Precision,0.0021560001607332595,0.004170058074410875,500,whole observation date
+HET_TOP_09,Paper_0.5,Recall,1.0,1.0,500,whole observation date
+HET_TOP_09,Paper_0.5,F1,0.004302723621521831,0.008305481751621479,500,whole observation date
+HET_TOP_09,Paper_0.5,F2,0.010687828694351732,0.02050820815018644,500,whole observation date
+HET_TOP_09,Paper_0.5,FPR,0.13407028433284654,0.15945282589225393,500,whole observation date
+HET_TOP_09,Paper_0.5,Specificity,0.840547174107746,0.8659297156671535,500,whole observation date
+HET_TOP_09,Paper_0.5,Balanced_Accuracy,0.9202735870538731,0.9329648578335766,500,whole observation date
+HET_TOP_09,Paper_0.5,MCC,0.04293584703279922,0.059365685626845084,500,whole observation date

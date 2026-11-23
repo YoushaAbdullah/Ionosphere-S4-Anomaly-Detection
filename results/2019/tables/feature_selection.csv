@@ -1,0 +1,41 @@
+stage,representation,features,retained_variance,output_dimensions,pseudo_classes,s4_forced_when_not_used_by_tree,seconds
+fold1,PCA,Corrected_S4 + PCA(other predictors),0.8816973079258595,6,,,
+fold1,GA_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,,5.757718931999989
+fold1,C45_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,False,0.8147904770012246
+fold1,GA_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,,81.25148049299969
+fold1,C45_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,False,1.0250150829997438
+fold1,GA_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,,118.21403287000066
+fold1,C45_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,False,1.4662939970003208
+fold2,PCA,Corrected_S4 + PCA(other predictors),0.8010859986585327,5,,,
+fold2,GA_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,,5.050670174998231
+fold2,C45_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,False,1.2572577809987706
+fold2,GA_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Elevation"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,7,50.0,,38.054605473000265
+fold2,C45_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,False,1.182253065999248
+fold2,GA_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,8,100.0,,74.51628270699803
+fold2,C45_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,False,1.6506523400021251
+fold3,PCA,Corrected_S4 + PCA(other predictors),0.8013134477553057,5,,,
+fold3,GA_K10,"[""L1 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,8,10.0,,4.005308053998306
+fold3,C45_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,False,1.268821661000402
+fold3,GA_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,8,50.0,,34.57680492600048
+fold3,C45_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,False,1.2173895329979132
+fold3,GA_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,,137.5060415299995
+fold3,C45_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,False,1.337982443998044
+fold4,PCA,Corrected_S4 + PCA(other predictors),0.8860711848035638,6,,,
+fold4,GA_K10,"[""L1 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW""]",,7,10.0,,6.534104985999875
+fold4,C45_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,False,0.9715971689984144
+fold4,GA_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,,65.1390630019996
+fold4,C45_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,False,1.5272848140011774
+fold4,GA_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,,113.13528942099948
+fold4,C45_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,False,1.278814525998314
+fold5,PCA,Corrected_S4 + PCA(other predictors),0.806806806718401,5,,,
+fold5,GA_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,,5.6448949909972725
+fold5,C45_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,False,1.0352546340000115
+fold5,GA_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,,65.3706694829998
+fold5,C45_K50,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,50.0,False,1.105645919000381
+fold5,GA_K100,"[""L1 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,8,100.0,,131.5390000180014
+fold5,C45_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,False,1.70262628799901
+final,PCA,Corrected_S4 + PCA(other predictors),0.8046691552731767,5,,,
+final,GA_K10,"[""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,8,10.0,,3.414947856999788
+final,C45_K10,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,10.0,False,0.8454994589992566
+final,GA_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,,144.4209218520009
+final,C45_K100,"[""L1 CNo"", ""L2 CNo"", ""Azimuth_sin"", ""Azimuth_cos"", ""Elevation"", ""Average of Carrier divergence"", ""Corrected_S4"", ""TEC at TOW"", ""Sigma of Carrier Divergence""]",,9,100.0,False,1.8208613230017363

@@ -1,0 +1,71 @@
+{
+  "paper_doi": "10.1109/ACCESS.2021.3051969",
+  "experimental_focus": "Section III-C / Study III: homogeneous and heterogeneous OCC ensembles",
+  "primary_operating_point": "paper 0.5 normality rule; CV-calibrated points are supplementary",
+  "protocol": "five expanding date-grouped folds; existing final holdout",
+  "max_normal_fit_rows": 5000,
+  "normalization_normal_rows": 2000,
+  "mandatory_predictor": "Corrected_S4",
+  "features": [
+    "L1 CNo",
+    "L2 CNo",
+    "Azimuth_sin",
+    "Azimuth_cos",
+    "Elevation",
+    "Average of Carrier divergence",
+    "Corrected_S4",
+    "TEC at TOW",
+    "Sigma of Carrier Divergence"
+  ],
+  "seed": 42,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "deap": "1.4.3"
+  },
+  "reference": "LABEL = 1[Corrected_S4 >= existing S4_THRESHOLD]",
+  "interpretation": "agreement with S4-derived reference, not independent event truth",
+  "holdout_history": "this period was evaluated in the earlier unchanged run",
+  "normalization": "0.5 + arctan((anomaly_score - native_boundary) / normal_IQR) / pi",
+  "bagging": "one full-size seeded bootstrap per candidate; a stated assumption",
+  "ga_fitness": "mean 3-fold pseudo-class accuracy; fewer features breaks ties",
+  "c45": "Weka J48 3.8.6, confidence 0.25, minimum leaf size 2",
+  "pca_adaptation": "explicit S4 channel plus 80%-variance PCA of other predictors",
+  "not_included": "two-class supervised baselines and SMOTE, per normal-only requirement",
+  "weka_dependencies": {
+    "weka-stable-3.8.6.jar": {
+      "url": "https://repo.maven.apache.org/maven2/nz/ac/waikato/cms/weka/weka-stable/3.8.6/weka-stable-3.8.6.jar",
+      "sha256": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9"
+    },
+    "bounce-0.18.jar": {
+      "url": "https://repo.maven.apache.org/maven2/nz/ac/waikato/cms/weka/thirdparty/bounce/0.18/bounce-0.18.jar",
+      "sha256": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca"
+    }
+  },
+  "cv_cache_reuse": {
+    "root": "verified-cv-cache",
+    "compatibility_audit": {
+      "fitting_signature": "00d62acb1d3c334a45dbfcecf87811220d783964ce1584c46e957500d73c97aa",
+      "input_sha256": "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e",
+      "preparation_sha256": "fb4720b2980e1976124f2971e3c41fa9a724167e47d012833821909ff2ddd236",
+      "original_notebook_sha256": "cd7ad1c59f8f8a05563158a79aeb235bcd487000fef4d7bd7e29dd22bf101584",
+      "reason": "Ensemble type/category reporting correction; all numerical fitting code and settings are identical."
+    },
+    "reason": "correct actual ensemble-diversity categories; numerical fits unchanged"
+  },
+  "final_test": {
+    "rows": 272742,
+    "reference_anomalies": 119,
+    "start": "2019-11-29 00:00:00",
+    "end": "2020-01-01 00:00:00",
+    "models": 65
+  },
+  "optional_export_notes": [
+    "Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.",
+    "Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2."
+  ],
+  "status": "completed",
+  "total_seconds": 510.02295411799787
+}

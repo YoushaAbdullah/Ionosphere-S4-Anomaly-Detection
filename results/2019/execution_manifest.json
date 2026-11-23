@@ -1,0 +1,308 @@
+{
+  "source": "Q4 Paper Code/scintillation_anomaly_detection.ipynb",
+  "source_sha256": "513083c412429db3f2cedfe12032a1a881b530fed679f6bdc08b4e5022c62c4b",
+  "input_sha256": "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "scikit-learn": "1.8.0",
+    "ipython": "9.18.1"
+  },
+  "adapters": [
+    "google.colab.files upload/download",
+    "display capture",
+    "Agg plot capture",
+    "verified numerical CV cache reuse; corrected ensemble diversity reporting"
+  ],
+  "cells": [
+    {
+      "cell": 3,
+      "status": "completed",
+      "seconds": 15.4703087529997
+    },
+    {
+      "cell": 6,
+      "status": "completed",
+      "seconds": 9.341708465002739
+    },
+    {
+      "cell": 9,
+      "status": "completed",
+      "seconds": 14.410418485000264
+    },
+    {
+      "cell": 12,
+      "status": "completed",
+      "seconds": 30.05876889800129
+    },
+    {
+      "cell": 15,
+      "status": "completed",
+      "seconds": 0.4276524420019996
+    },
+    {
+      "cell": 17,
+      "status": "completed",
+      "seconds": 0.0030184499992174096
+    },
+    {
+      "cell": 19,
+      "status": "completed",
+      "seconds": 0.00270009499945445
+    },
+    {
+      "cell": 21,
+      "status": "completed",
+      "seconds": 0.003676561998872785
+    },
+    {
+      "cell": 23,
+      "status": "completed",
+      "seconds": 0.0028327600011834875
+    },
+    {
+      "cell": 25,
+      "status": "completed",
+      "seconds": 0.0019120070028293412
+    },
+    {
+      "cell": 27,
+      "status": "completed",
+      "seconds": 0.003847795000183396
+    },
+    {
+      "cell": 29,
+      "status": "completed",
+      "seconds": 541.3647228469999
+    }
+  ],
+  "status": "completed",
+  "source_unchanged": true,
+  "df": {
+    "rows": 2733026,
+    "columns": [
+      "YYYY",
+      "MM",
+      "DD",
+      "Second",
+      "Total satellite",
+      "PRN",
+      "Azimuth",
+      "Elevation",
+      "L1 CNo",
+      "Total S4",
+      "Correction to total S4",
+      "60-second phase sigma",
+      "Average of Carrier divergence",
+      "Sigma of Carrier Divergence",
+      "TEC at TOW",
+      "L1 Lock time",
+      "Channel status",
+      "L2 Lock Time",
+      "L2 CNo",
+      "_DATE"
+    ],
+    "start": "2019-01-01 00:00:00",
+    "end": "2020-01-01 00:00:00",
+    "unique_dates": 223
+  },
+  "df_clean": {
+    "rows": 1783960,
+    "columns": [
+      "YYYY",
+      "MM",
+      "DD",
+      "Second",
+      "Total satellite",
+      "PRN",
+      "Azimuth",
+      "Elevation",
+      "L1 CNo",
+      "Total S4",
+      "Correction to total S4",
+      "60-second phase sigma",
+      "Average of Carrier divergence",
+      "Sigma of Carrier Divergence",
+      "TEC at TOW",
+      "L1 Lock time",
+      "Channel status",
+      "L2 Lock Time",
+      "L2 CNo",
+      "_DATE",
+      "Corrected_S4",
+      "LABEL",
+      "Azimuth_sin",
+      "Azimuth_cos",
+      "Hour",
+      "Month",
+      "Time_Period",
+      "Elevation_Group",
+      "Timestamp",
+      "Event_ID"
+    ],
+    "label_counts": {
+      "0": 1783376,
+      "1": 584
+    },
+    "start": "2019-01-01 00:00:00",
+    "end": "2020-01-01 00:00:00",
+    "unique_dates": 223
+  },
+  "S4_THRESHOLD": 0.2,
+  "train_df": {
+    "rows": 1246808,
+    "columns": [
+      "YYYY",
+      "MM",
+      "DD",
+      "Second",
+      "Total satellite",
+      "PRN",
+      "Azimuth",
+      "Elevation",
+      "L1 CNo",
+      "Total S4",
+      "Correction to total S4",
+      "60-second phase sigma",
+      "Average of Carrier divergence",
+      "Sigma of Carrier Divergence",
+      "TEC at TOW",
+      "L1 Lock time",
+      "Channel status",
+      "L2 Lock Time",
+      "L2 CNo",
+      "_DATE",
+      "Corrected_S4",
+      "LABEL",
+      "Azimuth_sin",
+      "Azimuth_cos"
+    ],
+    "label_counts": {
+      "0": 1246427,
+      "1": 381
+    },
+    "start": "2019-01-01 00:00:00",
+    "end": "2019-10-26 00:00:00",
+    "unique_dates": 156
+  },
+  "train_normal_df": {
+    "rows": 1246427,
+    "columns": [
+      "YYYY",
+      "MM",
+      "DD",
+      "Second",
+      "Total satellite",
+      "PRN",
+      "Azimuth",
+      "Elevation",
+      "L1 CNo",
+      "Total S4",
+      "Correction to total S4",
+      "60-second phase sigma",
+      "Average of Carrier divergence",
+      "Sigma of Carrier Divergence",
+      "TEC at TOW",
+      "L1 Lock time",
+      "Channel status",
+      "L2 Lock Time",
+      "L2 CNo",
+      "_DATE",
+      "Corrected_S4",
+      "LABEL",
+      "Azimuth_sin",
+      "Azimuth_cos"
+    ],
+    "label_counts": {
+      "0": 1246427
+    },
+    "start": "2019-01-01 00:00:00",
+    "end": "2019-10-26 00:00:00",
+    "unique_dates": 156
+  },
+  "val_df": {
+    "rows": 264410,
+    "columns": [
+      "YYYY",
+      "MM",
+      "DD",
+      "Second",
+      "Total satellite",
+      "PRN",
+      "Azimuth",
+      "Elevation",
+      "L1 CNo",
+      "Total S4",
+      "Correction to total S4",
+      "60-second phase sigma",
+      "Average of Carrier divergence",
+      "Sigma of Carrier Divergence",
+      "TEC at TOW",
+      "L1 Lock time",
+      "Channel status",
+      "L2 Lock Time",
+      "L2 CNo",
+      "_DATE",
+      "Corrected_S4",
+      "LABEL",
+      "Azimuth_sin",
+      "Azimuth_cos"
+    ],
+    "label_counts": {
+      "0": 264326,
+      "1": 84
+    },
+    "start": "2019-10-27 00:00:00",
+    "end": "2019-11-28 00:00:00",
+    "unique_dates": 33
+  },
+  "test_df": {
+    "rows": 272742,
+    "columns": [
+      "YYYY",
+      "MM",
+      "DD",
+      "Second",
+      "Total satellite",
+      "PRN",
+      "Azimuth",
+      "Elevation",
+      "L1 CNo",
+      "Total S4",
+      "Correction to total S4",
+      "60-second phase sigma",
+      "Average of Carrier divergence",
+      "Sigma of Carrier Divergence",
+      "TEC at TOW",
+      "L1 Lock time",
+      "Channel status",
+      "L2 Lock Time",
+      "L2 CNo",
+      "_DATE",
+      "Corrected_S4",
+      "LABEL",
+      "Azimuth_sin",
+      "Azimuth_cos"
+    ],
+    "label_counts": {
+      "0": 272623,
+      "1": 119
+    },
+    "start": "2019-11-29 00:00:00",
+    "end": "2020-01-01 00:00:00",
+    "unique_dates": 34
+  },
+  "FEATURES": [
+    "L1 CNo",
+    "L2 CNo",
+    "Azimuth_sin",
+    "Azimuth_cos",
+    "Elevation",
+    "Average of Carrier divergence",
+    "Corrected_S4",
+    "TEC at TOW",
+    "Sigma of Carrier Divergence"
+  ]
+}

@@ -1,0 +1,1942 @@
+{
+  "source_map": {
+    "LOF_BASE": "LOF|BASE",
+    "LOF_PCA": "LOF|PCA",
+    "LOF_GA": "LOF|GA_K10",
+    "LOF_C45": "LOF|C45_K10",
+    "OCSVM_BASE": "OCSVM|BASE",
+    "OCSVM_PCA": "OCSVM|PCA",
+    "OCSVM_GA": "OCSVM|GA_K10",
+    "OCSVM_C45": "OCSVM|C45_K100",
+    "IFOREST_BASE": "IFOREST|BASE",
+    "IFOREST_PCA": "IFOREST|PCA",
+    "IFOREST_GA": "IFOREST|GA_K100",
+    "IFOREST_C45": "IFOREST|C45_K100"
+  },
+  "ensembles": {
+    "HOMO_LOF_BASE__LOF_PCA": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_PCA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_BASE__LOF_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_BASE__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_PCA__LOF_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_PCA",
+        "LOF_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_PCA__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_PCA",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_GA__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_GA",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_BASE__LOF_PCA__LOF_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_PCA",
+        "LOF_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_BASE__LOF_PCA__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_PCA",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_BASE__LOF_GA__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_GA",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_PCA__LOF_GA__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_PCA",
+        "LOF_GA",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_LOF_BASE__LOF_PCA__LOF_GA__LOF_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "LOF_BASE",
+        "LOF_PCA",
+        "LOF_GA",
+        "LOF_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_PCA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_PCA__OCSVM_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_PCA__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_GA__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_GA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA__OCSVM_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_PCA",
+        "OCSVM_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_PCA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_GA__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_GA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_PCA__OCSVM_GA__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA__OCSVM_GA__OCSVM_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_PCA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_PCA__IFOREST_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_PCA",
+        "IFOREST_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_PCA__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_PCA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_GA__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_GA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA__IFOREST_GA": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_PCA",
+        "IFOREST_GA"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_PCA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_GA__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_GA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_PCA__IFOREST_GA__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_PCA",
+        "IFOREST_GA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA__IFOREST_GA__IFOREST_C45": {
+      "family": "Homogeneous",
+      "members": [
+        "IFOREST_BASE",
+        "IFOREST_PCA",
+        "IFOREST_GA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Homogeneous",
+      "base_algorithms": [
+        "IFOREST"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HET_BASE_LOF_BASE__OCSVM_BASE": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_BASE",
+        "OCSVM_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_BASE_LOF_BASE__IFOREST_BASE": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_BASE",
+        "IFOREST_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_BASE_OCSVM_BASE__IFOREST_BASE": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_BASE",
+        "IFOREST_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_BASE_LOF_BASE__OCSVM_BASE__IFOREST_BASE": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_BASE",
+        "OCSVM_BASE",
+        "IFOREST_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_SHARED_PCA": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_PCA",
+        "OCSVM_PCA",
+        "IFOREST_PCA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_SHARED_GA": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_GA",
+        "OCSVM_GA",
+        "IFOREST_GA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_SHARED_C45": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_C45",
+        "OCSVM_C45",
+        "IFOREST_C45"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_BEST_PER_ALGORITHM": {
+      "family": "Heterogeneous",
+      "members": [
+        "LOF_C45",
+        "OCSVM_PCA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_02": {
+      "family": "Top-N (single base algorithm)",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HET_TOP_03": {
+      "family": "Top-N (single base algorithm)",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HET_TOP_04": {
+      "family": "Top-N (single base algorithm)",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": false
+    },
+    "HET_TOP_05": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_06": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_07": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA",
+        "IFOREST_C45"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_08": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA",
+        "IFOREST_C45",
+        "LOF_PCA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_09": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA",
+        "IFOREST_C45",
+        "LOF_PCA",
+        "IFOREST_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_10": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA",
+        "IFOREST_C45",
+        "LOF_PCA",
+        "IFOREST_BASE",
+        "IFOREST_GA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_11": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA",
+        "IFOREST_C45",
+        "LOF_PCA",
+        "IFOREST_BASE",
+        "IFOREST_GA",
+        "LOF_BASE"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "HET_TOP_12": {
+      "family": "Heterogeneous",
+      "members": [
+        "OCSVM_PCA",
+        "OCSVM_GA",
+        "OCSVM_C45",
+        "OCSVM_BASE",
+        "LOF_C45",
+        "LOF_GA",
+        "IFOREST_C45",
+        "LOF_PCA",
+        "IFOREST_BASE",
+        "IFOREST_GA",
+        "LOF_BASE",
+        "IFOREST_PCA"
+      ],
+      "design_family": "Heterogeneous",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF",
+        "OCSVM"
+      ],
+      "is_genuinely_heterogeneous": true
+    },
+    "PAPER_REPORTED_TRIO": {
+      "family": "Paper reported example",
+      "members": [
+        "LOF_BASE",
+        "LOF_C45",
+        "IFOREST_C45"
+      ],
+      "design_family": "Paper reported example",
+      "base_algorithms": [
+        "IFOREST",
+        "LOF"
+      ],
+      "is_genuinely_heterogeneous": true
+    }
+  },
+  "thresholds": {
+    "LOF_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9484382903289293,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9470575662131635,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9616221548740892,
+        "operator": ">="
+      }
+    },
+    "LOF_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9643944360867127,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.95306037251439,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9633465625736978,
+        "operator": ">="
+      }
+    },
+    "LOF_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9691299702009751,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9557444045436247,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.96166266059129,
+        "operator": ">="
+      }
+    },
+    "LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9583633337838198,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9368052057446984,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9636299102126379,
+        "operator": ">="
+      }
+    },
+    "OCSVM_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9241066578491597,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.922354929487788,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9247560140497126,
+        "operator": ">="
+      }
+    },
+    "OCSVM_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9095428549172628,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9095156485154157,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9098654892954346,
+        "operator": ">="
+      }
+    },
+    "OCSVM_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9264869123637667,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9230763230361745,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9242862219767926,
+        "operator": ">="
+      }
+    },
+    "OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9250949817227767,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9230694632569361,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9247703273673303,
+        "operator": ">="
+      }
+    },
+    "IFOREST_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9060621690277657,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.8823976298130527,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.906434689874997,
+        "operator": ">="
+      }
+    },
+    "IFOREST_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9199074430340894,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9133008154307489,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9225850500551448,
+        "operator": ">="
+      }
+    },
+    "IFOREST_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9074163271884683,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9038742835439817,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9087086901356589,
+        "operator": ">="
+      }
+    },
+    "IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9101155642110299,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.8962284431131664,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.908984262660141,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9531962831828179,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9278897348638915,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9547603146508014,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9634502608675728,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9407370656307836,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9580915017474027,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9531699747895113,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9269719746592573,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.960600551370866,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_PCA__LOF_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9549627911529629,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9454798317231851,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9523531219041803,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_PCA__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9414593161795604,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9414593161795604,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9544929314670365,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_GA__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9666273503465497,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9420749573924205,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9593432651938978,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_PCA__LOF_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9621545279857934,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9264159695618113,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9513575747581668,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_PCA__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9480050084163074,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9199921073517356,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9531805136994516,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_GA__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9630970837722367,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9392444064036791,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9576931636238768,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_PCA__LOF_GA__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.944148571393538,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9347318064582221,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9508525312159397,
+        "operator": ">="
+      }
+    },
+    "HOMO_LOF_BASE__LOF_PCA__LOF_GA__LOF_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9591531821400987,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.92818550602496,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.950146629433287,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9166940918420645,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9158794116124304,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9170935682982456,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.924736518746267,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9233444722569445,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9243722489088707,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9244291493755603,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9226500159753203,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9247790720127639,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_PCA__OCSVM_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9178781329010197,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9164846940116556,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9167674656245776,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_PCA__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9179003769665877,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9163619918390392,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9170678736178057,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_GA__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9240458501223001,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9237265892001811,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9244113125467847,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA__OCSVM_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9191329007253408,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.918938966402183,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9192393656981892,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9194796496939849,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9184025802178745,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9195003124293686,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_GA__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9240122377062269,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9235284564378929,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9244753022433124,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_PCA__OCSVM_GA__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.919855174852574,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9190906348793947,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9192303792483868,
+        "operator": ">="
+      }
+    },
+    "HOMO_OCSVM_BASE__OCSVM_PCA__OCSVM_GA__OCSVM_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.920389882403609,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.920389882403609,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9204746202032031,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9080092456667607,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.8996306105226042,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9101428217437636,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9094043160611782,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.8997051559282374,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9051904797608658,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.8994606678289085,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.8991376475011266,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9059400950725115,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_PCA__IFOREST_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9120860092284517,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9085581077541918,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.910820688084265,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_PCA__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.905237693303228,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9041685021615062,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9118322164262095,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_GA__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9060134790814367,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9060134790814367,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9071951224501016,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA__IFOREST_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9114371191665543,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9040613161824331,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9076530411843847,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9048415198745307,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9037148783583028,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9084376561106868,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_GA__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9039346084828669,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9022917262855231,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.905455069308958,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_PCA__IFOREST_GA__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9076846187257539,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9051936377549992,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9090757137577969,
+        "operator": ">="
+      }
+    },
+    "HOMO_IFOREST_BASE__IFOREST_PCA__IFOREST_GA__IFOREST_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9052750495671892,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9050976334902328,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9071969450924781,
+        "operator": ">="
+      }
+    },
+    "HET_BASE_LOF_BASE__OCSVM_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9365879426039636,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9308816423735866,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9393493286357152,
+        "operator": ">="
+      }
+    },
+    "HET_BASE_LOF_BASE__IFOREST_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9185571924050959,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9120312877325566,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9005142756826875,
+        "operator": ">="
+      }
+    },
+    "HET_BASE_OCSVM_BASE__IFOREST_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9148932679096127,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9031720039249622,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9117166774566244,
+        "operator": ">="
+      }
+    },
+    "HET_BASE_LOF_BASE__OCSVM_BASE__IFOREST_BASE": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.921011575832813,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9163403302366312,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9062756301768218,
+        "operator": ">="
+      }
+    },
+    "HET_SHARED_PCA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9215672340535918,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9156924542873638,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9114614361664757,
+        "operator": ">="
+      }
+    },
+    "HET_SHARED_GA": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9178980610106052,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9116325834004582,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9048588374003519,
+        "operator": ">="
+      }
+    },
+    "HET_SHARED_C45": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9190635314200231,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9115543787034643,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9074555911058907,
+        "operator": ">="
+      }
+    },
+    "HET_BEST_PER_ALGORITHM": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9144642631641101,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9088217570383595,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9005412728910938,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_02": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9178781329010197,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9164846940116556,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9167674656245776,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_03": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.919855174852574,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9190906348793947,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9192303792483868,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_04": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9203898824036091,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9203898824036091,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9204746202032031,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_05": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9260968044881832,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9205131276658115,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9226410449000076,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_06": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9310194753092453,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9255174448690516,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9260871677266451,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_07": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9233934605898185,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9189179861008527,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9123875843546592,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_08": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9274950313436372,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9251862018333252,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9141154565172466,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_09": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9223082483349911,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9144182160415565,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9039476857312659,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_10": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9171306506662399,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9064894090136996,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.8979465085709445,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_11": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9136981538538141,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9125019016125531,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.8984601338417478,
+        "operator": ">="
+      }
+    },
+    "HET_TOP_12": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.9131275298646524,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9101423782934587,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.8969622704201587,
+        "operator": ">="
+      }
+    },
+    "PAPER_REPORTED_TRIO": {
+      "Paper_0.5": {
+        "threshold": 0.5,
+        "operator": ">"
+      },
+      "CV_F1": {
+        "threshold": 0.933830851843806,
+        "operator": ">="
+      },
+      "CV_F2": {
+        "threshold": 0.9156626570158296,
+        "operator": ">="
+      },
+      "CV_FPR_0.1pct": {
+        "threshold": 0.9133102683064656,
+        "operator": ">="
+      }
+    }
+  },
+  "paper_auc_champion": "HET_TOP_02",
+  "detection_f1_champion": "HET_TOP_09",
+  "study_iii_family_champions": {
+    "Single OCC": "OCSVM_PCA",
+    "Homogeneous": "HOMO_OCSVM_PCA__OCSVM_GA",
+    "Heterogeneous": "HET_TOP_10"
+  },
+  "selection_data": "pooled predictions from five expanding development folds",
+  "selection_warning": "CV used for selection; final holdout is the evaluation set"
+}

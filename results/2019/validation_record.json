@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "reference_platform": "Linux x86-64, Python 3.12.14, OpenJDK 21.0.13",
+  "checks": [
+    {
+      "command": "uv pip sync --python <clean-venv>/bin/python --require-hashes requirements.txt",
+      "result": "36 locked packages installed cleanly"
+    },
+    {
+      "command": "python run_experiment.py --data <original-2019.zip> --check-only",
+      "result": "input identity, schema, versions and full JDK passed"
+    },
+    {
+      "command": "python run_experiment.py --data <original-2019.zip> --output <new-directory> --prepare-only",
+      "result": "original preparation/EDA completed; 1,783,960 cleaned rows; 584 positives"
+    },
+    {
+      "command": "python tests/smoke_pipeline.py",
+      "result": "reduced synthetic end-to-end workflow passed; outputs not used as research evidence"
+    },
+    {
+      "command": "python verify_results.py",
+      "result": "archived artifact hashes and scientific invariants passed"
+    },
+    {
+      "command": "python -m py_compile run_experiment.py verify_results.py tests/smoke_pipeline.py",
+      "result": "passed"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "full_2019_fit_during_packaging": false,
+  "historical_2019_numerical_run": "completed; verified cache reuse and later plot-only redraw documented",
+  "untested_platform_routes": [
+    "Colab end-to-end",
+    "macOS end-to-end",
+    "WSL2 end-to-end"
+  ],
+  "environment_lock_sha256": "e9bbab6c7646c29749466b631236ec7148eb4df38459b2c2bd6ca480f011888e",
+  "scientific_source_sha256": "2dfde35f547793a3a67bdebaba9ba81b8f6f837a2ff083dcfff19efa070eb657"
+}

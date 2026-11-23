@@ -1,0 +1,7 @@
+{
+  "fitting_signature": "00d62acb1d3c334a45dbfcecf87811220d783964ce1584c46e957500d73c97aa",
+  "input_sha256": "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e",
+  "preparation_sha256": "fb4720b2980e1976124f2971e3c41fa9a724167e47d012833821909ff2ddd236",
+  "original_notebook_sha256": "cd7ad1c59f8f8a05563158a79aeb235bcd487000fef4d7bd7e29dd22bf101584",
+  "reason": "Ensemble type/category reporting correction; all numerical fitting code and settings are identical."
+}

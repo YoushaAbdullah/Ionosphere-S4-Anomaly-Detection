@@ -1,0 +1,11 @@
+Step,Action,Paper_Reference,Implementation
+1,Build prerequisite variants,III-C paragraph 1; III-A/B,12 candidates: 3 algorithms x 4 variants
+2,Create normal-data pseudo-classes,III-B prerequisite,"K-means K=10/50/100, normal training rows only"
+3,Select GA/C4.5 cluster settings,III-C paragraph 1,Highest development CV ROC-AUC; S4 mandatory
+4,Bootstrap normal fitting rows,III-C bagging statement,One seeded full-size bootstrap per member; paper leaves details unspecified
+5,Construct homogeneous ensembles,Table 1,All size-2/3/4 subsets within each algorithm: 33
+6,Construct heterogeneous ensembles,Tables 2 and 6,"Base pairs/trio, shared selectors, best-per-family, top-2 through top-12: 19"
+7,Normalize oriented member scores,III-C before Eq. 1,Training-period normal calibration; arctan is an explicit implementation choice
+8,Equal-average soft scores,Eq. 1,Mean normality >=0.5: normal; <0.5: anomaly
+9,Freeze single/homogeneous/heterogeneous choices,Study III comparison,Development CV AUC; never select using final-test metrics
+10,Evaluate and export,"Tables 5, 6, 7; Q4 extensions","Primary paper-threshold results; supplementary CV thresholds; counts, metrics, figures"
