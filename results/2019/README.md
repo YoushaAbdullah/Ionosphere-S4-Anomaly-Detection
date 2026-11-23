@@ -19,7 +19,7 @@ These are the completed experiment's actual outputs, archived for review without
 
 The executed notebook combines actual captured cell output and figures with the audited publication-only redraw. Its execution metadata distinguishes those stages. Temporary machine paths in outputs/manifests were replaced with portable labels for publication; no metric values or scientific source code were changed. `artifact_checksums.json` covers the resulting repository artifacts.
 
-This folder intentionally excludes raw receiver CSVs, Java binaries, full per-observation score matrices, sampled-row exports, and large TP/FP/FN lists. The complete data-derived output archive (scores and selector audits included, raw dataset/dependency binaries excluded) is attached to [release `study-iii-2019-v1`](https://github.com/YoushaAbdullah/Ionosphere-S4-Anomaly-Detection/releases/tag/study-iii-2019-v1). This keeps the Git repository practical to clone and avoids GitHub's per-file blob limits. The paper PDF is not redistributed.
+This folder intentionally excludes raw receiver CSVs, Java binaries, full per-observation score matrices, sampled-row exports, and large TP/FP/FN lists. A fresh run generates all of those data-derived outputs, including the full score matrices and selector audits; no cached scores are needed. The [versioned release](https://github.com/YoushaAbdullah/Ionosphere-S4-Anomaly-Detection/releases/tag/study-iii-2019-v1) identifies the archived code and executed publication outputs. No supplementary full-score release attachment is promised. This keeps the Git repository practical to clone and avoids GitHub's per-file blob limits. The paper PDF is not redistributed.
 
 ## Validation record
 
