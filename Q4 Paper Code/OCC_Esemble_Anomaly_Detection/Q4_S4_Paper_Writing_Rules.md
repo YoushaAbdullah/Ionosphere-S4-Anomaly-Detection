@@ -8,10 +8,18 @@
 
 Read the repository-root `AGENTS.md` and [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) first. These rules supplement the approved scientific configuration; proposed studies below do **not** authorize changing code, labels, predictors, partitions or results. Preserve the 2019 benchmark. Obtain the research owner's approval before implementing a new experimental protocol.
 
+## 0. Author-approved editorial standard
+
+**The publication target is the selected Q4 journal; the research and writing must retain the rigor sought in strong Q1 papers.** Do not lower methodological transparency, inferential caution, reproducibility, literature quality or visual communication to match a venue's quartile. Do not retarget the paper or imply that a venue ranking certifies article quality. “Q1 standards” is operationalized here as a meaningful and substantiated contribution, defensible validation, complete methods/results, fair comparisons, explicit uncertainty/limitations, and a coherent evidence-led argument—not elaborate language or guaranteed acceptance.
+
+The manuscript must tell **one compelling visual story** and completely cover the abstract, introduction, data/reference, methodology, results, discussion and conclusions. Keep the abstract selective within its word limit, but make every analysis necessary to understand and reproduce the claims available in the main text or explicitly indexed supplements. Missing work must be marked missing; writing rules do not supply missing experiments.
+
+**Research-paper citations are restricted to verified Q1/Q2 publications or highly cited, scientifically significant research papers.** Apply the eligibility audit in Section 3.1 before adding a paper to the manuscript. Journal instructions, data records and software documentation are administrative/provenance sources, not evidence that a research paper meets that standard. No scientific result or citation eligibility is established merely by this update.
+
 ## 1. What is verified, provisional or unavailable
 
 - **Verified journal identity and scope:** the linked journal is *Geomagnetism and Aeronomy*. Ionospheric observations and solar–terrestrial processes are in scope; English original submissions are welcome. See [the journal scope](https://link.springer.com/journal/11478/aims-and-scope).
-- **Quartile qualification:** the [SCImago entry](https://www.scimagojr.com/journalsearch.php?clean=0&q=27943&tip=sid), as exposed in its indexed 2025 snapshot, reports SJR 0.186 and Q4. Direct page retrieval returned HTTP 403. Category/year tables and JCR quartiles were not independently inspected. Do not call this a verified Q1 journal or infer a quartile from its impact factor. Recheck the actual ranking system, category and year required by the institution before selecting a venue. “Q1-quality” is an aspiration for rigor, not an acceptance guarantee. The requested filename is a project label, not a ranking claim.
+- **Quartile qualification:** the [SCImago entry](https://www.scimagojr.com/journalsearch.php?clean=0&q=27943&tip=sid), as exposed in its indexed 2025 snapshot, reports SJR 0.186 and Q4. Direct page retrieval returned HTTP 403. Category/year tables and JCR quartiles were not independently inspected. Do not call this a verified Q1 journal or infer a quartile from its impact factor. The author has confirmed a Q4 publication target while retaining the higher research/writing standard defined in Section 0. Recheck bibliometric metadata if needed for reporting, but do not treat Q1 venue status as a submission prerequisite for this chosen journal. The requested filename is a project label, not a ranking claim.
 - **Video limitation:** [the supplied video](https://www.youtube.com/watch?v=nhXbikEb_bI) and its official metadata endpoint could not be retrieved: web access was throttled and the execution environment returned a tunnel 403. No transcript was obtained. No rule here is represented as a quotation or verified teaching from that video. Reconcile a user-supplied/public transcript later; never invent its title, speaker, timestamps or recommendations.
 - **Evidence levels:** publisher requirements below are sourced; recent-paper patterns are an explicitly limited editorial-fit inference; numerical observations come from saved project outputs; proposed contributions are hypotheses requiring new evidence.
 - **Authority:** current journal instructions and an editor's written clarification outrank generic publisher templates, this guide and video advice. Recheck policies immediately before submission. Do not claim that creating this file satisfies every requirement of a manuscript that has not yet been prepared.
@@ -72,9 +80,36 @@ Under [Pleiades AI policy](https://www.pleiades.online/en/publishers/publishing-
 | [Mohamed et al., delayed TEC responses](https://doi.org/10.1134/S0016793226600207), September 11, 2026 | Response timing, solar conditions and data gaps | Define time, exposure and missingness precisely; correlation alone is not mechanism |
 | [Mukesh et al., NavIC/GPS VTEC modelling](https://doi.org/10.1134/S0016793226600293), September 11, 2026 | ML compared with established ionospheric models | Include meaningful simple/domain baselines; an algorithm comparison is not automatically novel |
 
+**Citation status of this sample:** these are venue-fit examples, not an approved manuscript bibliography. Their inclusion here does not verify Q1/Q2 eligibility or high-citation/significance status. Do not carry them into the paper automatically; each must independently pass Section 3.1.
+
 **Fit assessment:** the sample supports an observational/model-evaluation paper with clear geophysical context. It does not imply that any collection of ML algorithms will be accepted, that recent authors' validation protocols should be copied uncritically, or that low-latitude TEC results transfer to SKN amplitude scintillation.
 
 **Prior-art guard:** ML scintillation detection is established. Read [Linty et al.](https://doi.org/10.1109/TAES.2018.2850385), the [2024 geodetic-receiver study](https://doi.org/10.1186/s43020-024-00136-7), and [Bals et al.'s 2025 high-latitude signature classification](https://doi.org/10.1029/2024JH000499) before claiming novelty. They address different inputs, temporal resolutions or scientific tasks; they are not directly comparable numerical baselines without matching data and definitions. Do not claim “first ML detection,” “first high-latitude ML,” or “first false-alarm-aware study.” Build a focused prior-art comparison around task, reference, available information, validation independence and practical decision cost.
+
+### 3.1 Mandatory manuscript citation eligibility and audit
+
+Use only directly relevant, credible research papers that pass at least one route:
+
+- **Route A — verified Q1/Q2:** record the journal, ranking provider (for example JCR or SJR), ranking year, relevant subject category and evidence URL. Establish a consistent category/year policy before screening references; prefer the publication-year classification when available, and label any current-year classification explicitly. Do not mix JCR and SJR silently, infer quartiles from impact factor, or select unrelated categories just to obtain a higher rank.
+- **Route B — highly cited and scientifically significant:** verify citation count, database and retrieval date, then document why the work is influential for this specific question. Evaluate citation volume in light of age and field; recognized methodological or physical importance must be explained, not assumed from popularity. Do not invent a universal count cutoff, a percentile or an eligibility label. If the evidence is unavailable or ambiguous, leave eligibility pending rather than asserting that a source qualifies.
+
+Neither route overrides relevance, methodological validity, corrections or retractions. Read the claim-bearing parts of the paper and check that the citation actually supports the sentence. Prefer original research for a specific method or finding; use high-quality reviews to synthesize a field, not to conceal failure to inspect a decisive primary study. Include recent eligible work and eligible foundational work as their roles require; do not enforce an arbitrary recent-years window or citation quota.
+
+Maintain a reference-audit table during drafting with these fields:
+
+| Field | Record before approval |
+|---|---|
+| Identity | Exact title, authors, year, journal and DOI |
+| Eligibility | Route A or B, verified evidence, provider/year/category or citation snapshot |
+| Scientific role | Background, original method, comparator, contradictory finding or gap evidence |
+| Claim support | Exact claim supported and relevant section/page/figure inspected |
+| Comparability | Inputs, temporal resolution, reference independence, population and evaluation design |
+| Integrity | Corrections/retractions, material limitations and full-text/abstract access level |
+| Decision | Eligible, pending or rejected, with reason and checker/date |
+
+No paper is automatically eligible because it appeared in the earlier guide, was suggested by an AI system, belongs to a famous publisher, or reports an impressive score. An abstract-only scan is insufficient to endorse detailed methodology. Do not fabricate citation counts or claim that every currently linked paper has already passed this audit.
+
+**Attribution conflict rule:** do not silently exempt an ineligible original method, indispensable dataset-associated paper or important contradictory finding. Flag the conflict to the author and obtain an explicit exception if needed; otherwise narrow/withhold the unsupported claim or find an eligible primary source that genuinely supports it. Never replace the true originator with a prestigious secondary citation to disguise provenance, and never suppress conflicting evidence solely because its venue is lower-ranked. Data/software/receiver documentation and publisher policies remain separately identified provenance/administrative sources; they must not be presented as qualifying research papers.
 
 ## 4. Evidence ledger: what 2019 actually supports
 
@@ -160,7 +195,7 @@ The single-contribution/reader-oriented principle is consistent with [Mensh and 
 5. **Match verbs to evidence.** “Was associated with” is different from “caused”; “agreed with the reference” is different from “identified real scintillation.” Statistical association, a feature ranking or a SHAP plot does not establish mechanism or causal importance.
 6. **Specify comparisons.** “Better” must name the comparator, metric, operating point, dataset/period and uncertainty. Use counts alongside rates; separate percentage-point from relative-percent changes. Do not use “significant” without a justified inferential test.
 7. **Avoid promotional claims.** Do not write “groundbreaking,” “best,” “highly accurate,” “robust,” or “generalizable” as substitutes for evidence. Prefer exact observations and qualified conclusions.
-8. **Cite the claim actually supported.** Verify authors/year/DOI and read the relevant methods before attributing detailed procedures. Attribute original methods and distinguish the Tsai–Lin adaptation from new contributions. Do not pad references to satisfy an invented minimum or imitate a journal's citations for strategic self-citation.
+8. **Cite the claim actually supported.** Apply Section 3.1 eligibility first, verify authors/year/DOI and read the relevant methods before attributing detailed procedures. Attribute original methods and distinguish the Tsai–Lin adaptation from new contributions. Do not pad references to satisfy an invented minimum or imitate a journal's citations for strategic self-citation.
 9. **Preserve negative evidence.** Include zero-detection thresholds, unsuccessful selectors and cases where simpler models win. Report the prespecified family comparisons, not a test-ranked winner presented as preselected.
 10. **Use consistent reporting precision.** Counts are integers; rates need denominators; enough decimals to show rare-event differences without suggesting impossible precision. Define S4 and its threshold, score orientation and strict/non-strict decision inequalities explicitly.
 11. **Edit in separate passes.** First fix scientific logic/evidence, then section order and paragraph connections, then terminology/grammar, and only then formatting. Fluent prose cannot rescue an unidentifiable claim or a circular validation target.
@@ -192,6 +227,83 @@ Plan figures as evidence, not decoration:
 - **F6, future:** genuinely new-period/independent-event validation, only after performed.
 
 Keep the full 65-candidate/260-row record in a supplement; use concise main tables to support the chosen question. Captions must identify units, sample counts, reference source, operating point, uncertainty and what a panel does not establish. Do not label proposed figures as existing results.
+
+### 8.1 Abstract: a precise miniature of the argument
+
+Write the abstract last and reconcile it against the final tables. Within the journal's 150–250 words, include the physical/monitoring problem, exact objective, data/period and task, essential design, principal numerical finding with its detection–false-alarm trade-off, and a bounded conclusion. Identify retrospective S4-reference agreement when that is the evaluated task. State normal-only fitting without misrepresenting label-informed development selection as fully unsupervised. Do not advertise an untouched test, independent event truth, confidence interval or robustness study that does not exist.
+
+Give the principal result's numerator/denominator and false positives where space permits, with the configuration and operating point clear. Do not lead with accuracy alone or select the best historical test number after the fact. Define necessary abbreviations; omit unsupported superlatives, a literature survey, promises of future work as achieved results, and nonessential implementation detail. Every number and conclusion must match the body; a concise abstract does not excuse missing methodological detail elsewhere.
+
+### 8.2 Introduction: consequence, critical synthesis, gap and contribution
+
+Build a connected argument: why this measurement/decision matters; what eligible prior work has established; which specific uncertainty remains; why existing evidence/designs do not settle it; and how the present study addresses it. Compare prior work by scientific task, measurement resolution, reference validity, temporal independence and decision cost, not by a list of model names. Explain why the unresolved question matters to geophysics or monitoring practice rather than merely noting that a combination of algorithms has not been tried.
+
+End with explicit objectives or research questions and a small number of testable contribution statements. Each claimed contribution must map to an actual result or analysis. Separate adaptation/reproduction, empirical findings and genuinely new methods. Claims such as “first,” “novel,” “generalizable” and “operational” require specific evidence and an adequate literature search; otherwise remove or qualify them. Use the most relevant eligible literature, including contrary results. Keep general ML history, promotional language and a methods tutorial out of the introduction.
+
+### 8.3 Methodology: reproduce the entire scientific decision process
+
+The main text must explain the design and information flow; supplements may hold long tables, configuration files and indices, but must be explicitly referenced. Report the following without leaving consequential choices implicit:
+
+| Component | Required methodological detail |
+|---|---|
+| Study/task | Scientific question, target population, unit of analysis, retrospective versus prospective use, decision time, outcome and any horizon |
+| Data provenance | Archive identity/hash, source/access, station/receiver/signal, coordinate convention, clock, observation interval, actual coverage, satellites and raw counts |
+| Preparation | Ordered quality filters and per-step attrition, S4 correction equation, units, invalid/missing values, duplicate/gap treatment and possible exclusion/censoring bias; preserve approved preparation |
+| Reference | Exact label formula and inequality, provenance/independence, class counts per partition, S4's simultaneous predictor role and the deterministic reference baseline |
+| Temporal partitions | Exact train/development/test dates, five date-grouped forward folds, exposure and class counts, grouping/overlap checks, historical holdout reuse and any approved embargo rationale |
+| Normal fitting samples | Eligibility, 5,000-row cap, date-stratified selection, source indices, seeds, bootstrap draws and separate normal calibration rows |
+| Preprocessing/features | Complete feature list/units/availability, encoding, imputation/scaling fits, treatment of missing/infinite values and fold-local information boundaries |
+| Representations/selectors | BASE; PCA variance rule with explicit retained S4; normal-only K-means K/initialization; GA population, generations, operators, fitness/inner validation/ties; genuine J48 version, settings and forced-feature behavior |
+| OCCs | LOF novelty/scoring mode and neighborhood/distance; OCSVM kernel, nu/gamma; Isolation Forest trees/sample size/contamination; implementation versions, defaults and seeds |
+| Score construction | Native score direction/boundaries, normalization equation and calibration data, pooling comparability, interpretation and lack of probability calibration |
+| Ensembles | Candidate-to-final selection, exact membership/combinations, equal averaging, actual algorithm diversity, homogeneous/heterogeneous classification and the fixed paper trio |
+| Selection and freezing | Development labels used, AUC/model/K selection, threshold objectives/search/ties, prespecified primary versus supplementary rules, final refit and freeze timing |
+| Evaluation | Every reported metric's definition/denominator, observation versus event matching, undefined-value handling, uncertainty/inferential unit and planned comparisons |
+| Computation/reproducibility | Environment/Java/dependencies, code revision, manifests, software/data rights, runtime/hardware/cache use and commands needed to regenerate outputs |
+
+Explain why each consequential choice suits the task and distinguish paper-prescribed settings from GNSS adaptations and underspecified implementation assumptions. Include enough equations or unambiguous pseudocode to reconstruct reference construction, fitting/selection, score transformation, ensemble aggregation and threshold decisions. Do not substitute code availability for an intelligible Methods section, or imply that pseudo-class fitness is scintillation accuracy. Report what was actually done; proposed ablations, repeated seeds, new labels and new tests remain proposals until approved and executed.
+
+### 8.4 Results: complete evidence, ordered to answer the question
+
+Start with observation flow, usable exposure, class prevalence and the exact evaluated population. Present the prespecified main comparisons and operating points, then the diagnostics/ablations that address the proposed explanation, followed by independent validation only if available. Connect each subsection to a research question and its figure/table. Distinguish development-selection estimates from historical final-period evaluation.
+
+Report positive detections, false positives, misses, relevant true negatives, rates and uncertainty together. Include all-normal/reference-rule baselines, simple/single models, primary paper-threshold results and separately labelled CV-selected thresholds. Preserve zero-detection cases and simpler-model wins. Make the complete 65-candidate/260-row record available even when main tables are selective for readability. Give denominators and exposure for subgroup analyses, especially when positives are sparse or absent; do not imply that every subgroup supports an AUC.
+
+Describe visible numerical patterns before interpreting them. Any percentage or improvement must name its comparator, metric, operating rule and evaluation period. State whether uncertainty covers predictions, temporal variation, fitting seeds or selection; do not add unsupported significance claims. New descriptive patterns found after looking at the historical test must be labelled exploratory and reserved for confirmation on new data. Do not omit a result because it weakens the preferred narrative, invent an unrun experiment to complete a figure, or retune against the final test.
+
+### 8.5 Discussion: explanation, alternatives, boundaries and importance
+
+Answer the central question first, then develop what the evidence means. Keep the following explicit:
+
+1. What is the main finding, and which visual/numerical evidence supports it?
+2. Which explanation is supported by a controlled test, and which remains only plausible? Separate decision-boundary choice, score-scale/refit transport, temporal shift and measurement artifacts rather than treating them as interchangeable causes.
+3. How does the finding agree or conflict with eligible prior research, and can differences be explained by task, reference, temporal resolution, population or validation design?
+4. What do the single-model/ensemble comparisons and failed thresholds imply about added complexity and practical alarm cost?
+5. How do S4-derived labels, label-informed selection, the previously inspected test, single-station/incomplete coverage, rare positives, dependent samples, filtering and unperformed external validation constrain inference?
+6. What is the defensible geophysical or monitoring relevance? Distinguish a computational association from a physical mechanism and a retrospective benchmark from deployable decision support.
+7. What concrete next experiment could falsify or strengthen the interpretation, and what additional measurements would it require?
+
+Limitations must change the scope of the conclusion, not appear as a ceremonial final paragraph. Do not repeat the entire Results section, blame unexplained failures on domain shift, claim physical-event verification from reference agreement, or cite a high-ranked paper as authority for an incompatible task. A compelling discussion accommodates counterevidence and states when the proposed explanation is not established.
+
+### 8.6 Conclusion: answer, quantified scope and defensible consequence
+
+State the answer to the research question, the demonstrated contribution, the essential quantitative trade-off, and its scope. Explain what the finding changes about evaluating or using these models, within the available evidence. Acknowledge the decisive limitation that prevents a broader claim and identify one focused next step where useful. Do not introduce new data, analyses, methods, references or numerical results; avoid an algorithm inventory or a verbatim repeat of the abstract. Do not turn future independent validation into an achieved result or claim superiority across all metrics/conditions. Ensure every conclusion is supported in Results and qualified consistently with Discussion.
+
+### 8.7 Mandatory visual-story and traceability standard
+
+Before drafting prose, build a storyboard linking **research question → claim → analysis → figure/panel → numerical source → limitation**. The sequence should let a reader understand the argument from the figures and captions, then verify it in the text. A visual story must be coherent and memorable while retaining failures and uncertainty; it must not manufacture a positive story.
+
+- Give each main figure a distinct scientific question. The sequence should establish the data/reference and temporal design, expose the ranking–alarm discrepancy, explain the failure where evidence permits, compare prespecified decisions fairly, and show external validation only when performed. Avoid redundant leaderboard plots or decorative diagrams that add no evidence.
+- Design panels around comparable models, periods and thresholds. Use consistent units, colors/symbols, labels, panel ordering and denominators across figures. Show rare-positive prevalence and distinguish observation counts from episode counts. Explain log scales, zooms, omitted ranges and shared axes; never use axis truncation, selective periods or smoothing to exaggerate an effect.
+- Show uncertainty and paired comparisons where justified; do not draw confidence bands that were not computed. Use accessible palettes plus line/symbol distinctions and readable final-size typography. Keep the publisher's production rules in Section 2.2.
+- Make captions interpretable without searching the methods: identify the evaluated population/period, reference, model/operating point, n/exposure, units, panels, uncertainty definition and essential limitation. Caption conclusions must not exceed what the panel shows.
+- Link each panel to a saved metric/prediction artifact, code revision and plotting configuration. Preserve data fidelity and use deterministic scientific plotting. Do not manually alter a plotted result or use generative imagery as scientific evidence. Mark conceptual illustrations and proposed/future analyses explicitly.
+- Use concise main tables for exact numbers and comprehensive supplements for detail. The prose should explain what the figure establishes rather than narrating every point. Map every contribution claim to at least one evidential result; avoid figures whose only purpose is to make the paper look sophisticated.
+- Review the figures in order with captions alone, then review the manuscript without figures. Both must express the same central question, results, limitations and conclusion. Reconcile abstract values, Results tables, captions and Conclusion against one numerical source of truth before submission.
+
+### 8.8 Section-completeness audit
+
+Maintain a checklist for **title, abstract, introduction, data/reference, methodology, results, discussion, conclusion, references, declarations and supplements**. For each substantive requirement record a manuscript location, evidence/source and status. Each methods choice must have a reproducible description; each reported analysis must have a result; each interpretation must point to evidence and alternatives; each conclusion must follow from the results. If a required detail is unknown or an analysis is unperformed, flag it for resolution—never fill the gap with plausible text. Keep essential logic in the main paper even when technical detail is moved to an explicitly cited supplement.
 
 ## 9. Scientific reporting and experiment-design safeguards
 
@@ -234,7 +346,9 @@ Before calling the manuscript submission-ready, complete a dated audit with an o
 
 | Gate | Evidence needed | Current position |
 |---|---|---|
-| Target identity/ranking | Correct journal, article type and institution's ranking requirement | Journal identified; Q1 status not established |
+| Target and research standard | Chosen Q4 venue/article type; rigor defined in Section 0 | Author confirmed Q4 publication target with Q1-level research/writing ambition |
+| Citation eligibility | Every research citation passes Section 3.1 with recorded evidence | Existing reading links are not an audited eligible bibliography |
+| Visual and section completeness | Storyboard, panel-source links and complete Section 8 audit | Requirements defined; manuscript/production figures not yet audited |
 | Video fidelity | Accessible transcript and checked interpretation if video advice is retained | Unavailable; not used as verified evidence |
 | Novelty | Focused prior-art matrix and a falsifiable contribution beyond established methods | Candidate directions proposed, novelty not established |
 | Reference validity | Exact label dependency and justified physical-validation scope | S4-reference dependence known; independent event truth absent |
@@ -263,3 +377,5 @@ For every future manuscript request, Codex must:
 4. Keep proposals and missing information visibly separate; request critical facts rather than invent them.
 5. Preserve the approved scientific code and benchmark unless a specific change is authorized.
 6. Verify numbers, references and journal formatting against the actual final manuscript before marking compliance complete.
+7. Enforce the Q1/Q2-or-highly-cited-significant citation eligibility audit; do not silently waive it or fabricate bibliometric evidence.
+8. Complete the visual-story and section-completeness audits, including detailed methodology, results, discussion, introduction, abstract and conclusion, without lowering rigor for the Q4 target.
