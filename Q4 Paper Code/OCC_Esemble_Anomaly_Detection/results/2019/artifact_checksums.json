@@ -1,9 +1,9 @@
 {
   "algorithm": "SHA-256",
-  "scope": "Published files in results/2019, excluding this manifest",
+  "scope": "Published files in experiment results/2019, excluding this manifest",
   "sha256": {
     "2019_study_iii_executed.ipynb": "ba2e1355ef12dd76ebc9c5fdb78f947ce2a10725a5b41aa194cb539a3a52333e",
-    "README.md": "1ebd1badcb5843625ce65f06c2ae8eddda31a0f156673917524e1a9fdfc8e036",
+    "README.md": "28874bb995664b53b688745edf2d482e0f811a952aab0d1318a76567595c476a",
     "cv_cache_audit.json": "7091155e638e4ed5e4b10dd0e27df3329837a81a5a83e59f4b73eff76fdfbe46",
     "execution.log": "b3031d5df1bb4cab3e2c21420e862194f0f4c9de084e358e291aa6bfe4acc9eb",
     "execution_manifest.json": "29928c457bd3779e0efbccdf8719bc0513acabbe0222e357604cd2e85522671a",
@@ -24,6 +24,7 @@
     "frozen_selection.json": "f630c959aaf94b911398fdfe879112a9ecc7a321aeb2e06639f2be54addd4f14",
     "numerical_run_source.ipynb": "513083c412429db3f2cedfe12032a1a881b530fed679f6bdc08b4e5022c62c4b",
     "postprocessing_audit.json": "b76c346b70ca066f9fc0672ab573fdaed99dd01c31a8bac9f47bee4805ed76b7",
+    "relocation_audit.json": "5a59615c6dfdd65d7b465043ddb5c15fc645f75e0952bb62e6cd83a844149c0c",
     "research_report.html": "31bcf01885b6d8f7834f2d86f9409f6d271d976a71feface31723cb88431108c",
     "run_manifest.json": "abdbc6762b61c522bd3b65b40e267ece864b9219b6e788a35cd643b491c8a80b",
     "selected_feature_variants.json": "5964630163aa6e7567366dd5c6545629e5254bc1c0aab457b6af4a02f6a7a4dc",

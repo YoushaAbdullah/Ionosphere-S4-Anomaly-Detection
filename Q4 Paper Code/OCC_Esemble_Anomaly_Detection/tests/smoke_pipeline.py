@@ -27,7 +27,7 @@ namespace={'FEATURES':features,'df_clean':frame,'S4_THRESHOLD':.2,'display':lamb
            'val_df':frame.loc[(frame._DATE>=dates[20*60])&(frame._DATE<dates[28*60])],
            'test_df':frame.loc[frame._DATE>=dates[28*60]]}
 root = Path(__file__).resolve().parents[1]
-notebook = json.loads((root / 'Q4 Paper Code/scintillation_anomaly_detection.ipynb').read_text())
+notebook = json.loads((root / 'scintillation_anomaly_detection.ipynb').read_text())
 cells = [cell for cell in notebook['cells'][12:] if cell['cell_type'] == 'code']
 source = '\n'.join(''.join(cell['source']) for cell in cells[:-1])
 exec(compile(source,'paper_pipeline_smoke','exec'),namespace)

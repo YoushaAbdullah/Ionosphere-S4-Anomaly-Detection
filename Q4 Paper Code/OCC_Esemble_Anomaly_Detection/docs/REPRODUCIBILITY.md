@@ -6,6 +6,50 @@ The source notebook is the scientific implementation. `run_experiment.py` execut
 
 The version-controlled 2019 outputs are historical results from the completed cloud experiment. They are not mock outputs and are not claimed to be a new full fit performed during repository packaging.
 
+## Canonical location and Codex context
+
+All experiment files now live under `Q4 Paper Code/OCC_Esemble_Anomaly_Detection/`.
+Run commands from that directory; the repository root contains only the project
+index, Codex router and shared Git/CI configuration. The runner finds its source
+notebook and dependency lock relative to its own file. Relative output paths stay
+inside the experiment directory even when it is launched from another directory.
+
+The root `AGENTS.md` points to the experiment's `AGENTS.md`, `CodeRules.md`, and
+`ResearchRules.md`. These files persist the objective, approved settings, known
+limitations, run commands and workspace rules for future Codex sessions. Open the
+same repository/version and reference this folder or its runner. This gives Codex
+project context; it does not import cloud-chat history into another application.
+
+Historical numerical snapshots/manifests are preserved as historical evidence,
+including their old source-path labels. The relocation audit distinguishes those
+labels from current executable paths and verifies that scientific code and recorded
+metrics did not change. Do not rewrite old executed outputs to look like a new run.
+
+For direct interactive notebook execution, enter this experiment directory and set
+`os.environ["Q4_PAPER_OUTPUT"]` to a new `runs/<run-name>/study_iii_results` path
+before section 4. The portable runner sets the absolute output location for you
+and remains the recommended reproducible entry point; the notebook's historical
+fallback and preparation cells were not altered for this folder move.
+
+## Time-series K-fold and future independent testing
+
+The outer evaluation already uses **five-fold time-series cross-validation**:
+`TimeSeriesSplit(n_splits=5)` receives sorted unique development dates. Each split
+expands training into earlier dates and validates on the next date block; whole
+dates stay together. No future date is used to train an earlier validation fold.
+This differs from shuffled/ordinary KFold. The three-fold pseudo-class validation
+inside GA is a separate training-only selector-fitness procedure, not the outer
+time-series evaluation.
+
+The user elected to keep 2019 as a historical reproduction benchmark and reserve
+genuinely new data for a future untouched final test. No new test dataset/boundary
+is configured by this reorganization. For that future study, establish input
+identity, chronological boundaries and overlap checks before inspecting final-test
+scores; freeze model/feature/ensemble/threshold choices on development data; then
+evaluate once and export all metrics, observation-level detection records, tables
+and figures. Record that evaluation history permanently. A new run of the old
+2019 final period is still a reproduction, not an untouched-test experiment.
+
 ## Reference environment
 
 - Python 3.12.14; Linux x86-64.
@@ -27,7 +71,7 @@ Regeneration is not necessary to run the experiment and should be reviewed as an
 
 ## Run modes
 
-From the repository root, after installing dependencies and obtaining the original archive:
+From the experiment root (`Q4 Paper Code/OCC_Esemble_Anomaly_Detection`), after installing dependencies and obtaining the original archive:
 
 ```bash
 # Validate exact archive identity, first CSV schema, pinned dependencies, and JDK.
@@ -40,7 +84,7 @@ python run_experiment.py --data data/2019.zip --output runs/preparation --prepar
 python run_experiment.py --data data/2019.zip --output runs/2019
 ```
 
-Each output directory must be new or empty. This prevents accidental mixing of previous fits/results. Full runs disable any inherited `Q4_CV_CACHE`; all folds fit fresh. `--check-only` performs no fitting or Maven downloads. A GPU is not used. Plan for substantial CPU time and memory: all raw data and EDA remain in the original in-memory notebook workflow.
+Relative `--output` paths are resolved under the experiment folder, even when the runner is invoked from the repository root or another working directory. Relative `--data` paths are resolved from the calling terminal directory; an absolute data path is unambiguous. Each output directory must be new or empty. This prevents accidental mixing of previous fits/results. Full runs disable any inherited `Q4_CV_CACHE`; all folds fit fresh. `--check-only` performs no fitting or Maven downloads. A GPU is not used. Plan for substantial CPU time and memory: all raw data and EDA remain in the original in-memory notebook workflow.
 
 If a run fails during a notebook cell, the manifest records failure and the executed notebook captures its error. `prepared` means preparation/EDA completed, not that model results exist. Only `completed` means the whole requested experiment finished. Do not treat a partial directory as a completed experiment.
 

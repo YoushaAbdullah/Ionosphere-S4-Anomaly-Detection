@@ -1,6 +1,6 @@
 # Keep generated research artifacts out of default review/statistics views.
-results/** linguist-generated=true
-results/**/README.md linguist-generated=false
+"Q4 Paper Code/OCC_Esemble_Anomaly_Detection/results/**" linguist-generated=true
+"Q4 Paper Code/OCC_Esemble_Anomaly_Detection/results/**/README.md" linguist-generated=false
 *.ipynb text eol=lf
 *.py text eol=lf
 *.md text eol=lf

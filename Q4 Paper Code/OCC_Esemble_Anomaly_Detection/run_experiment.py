@@ -27,7 +27,7 @@ import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
-NOTEBOOK = ROOT / "Q4 Paper Code" / "scintillation_anomaly_detection.ipynb"
+NOTEBOOK = ROOT / "scintillation_anomaly_detection.ipynb"
 DATA_SHA256 = "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e"
 PACKAGES = ("numpy", "pandas", "scipy", "scikit-learn", "matplotlib", "deap",
             "ipython", "Jinja2", "MarkupSafe", "joblib", "threadpoolctl")
@@ -128,7 +128,10 @@ def run(args):
     if args.check_only:
         print("Preflight passed; no experiment or network dependency downloads were run.")
         return
-    output = args.output.expanduser().resolve()
+    output = args.output.expanduser()
+    if not output.is_absolute():
+        output = ROOT / output
+    output = output.resolve()
     if output.exists() and any(output.iterdir()):
         raise ValueError("Output directory is not empty. Choose a new --output to preserve prior results.")
     output.mkdir(parents=True, exist_ok=True)
@@ -138,7 +141,7 @@ def run(args):
         if cell["cell_type"] == "code":
             cell.update(outputs=[], execution_count=None)
     manifest = {
-        "status": "running", "source": "Q4 Paper Code/scintillation_anomaly_detection.ipynb",
+        "status": "running", "source": NOTEBOOK.name,
         "source_sha256": hashlib.sha256(source_bytes).hexdigest(),
         "input": input_info, "python": sys.version, "platform": platform.platform(),
         "versions": versions, "java": java,
@@ -262,7 +265,7 @@ def run(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, required=True, help="Path to the original 2019.zip")
-    parser.add_argument("--output", type=Path, default=Path("runs/2019"), help="New/empty output directory")
+    parser.add_argument("--output", type=Path, default=Path("runs/2019"), help="New/empty directory; relative paths are resolved under the experiment folder")
     parser.add_argument("--check-only", action="store_true", help="Validate pinned dependencies, JDK and data without fitting")
     parser.add_argument("--prepare-only", action="store_true", help="Execute unchanged preparation and EDA only")
     parser.add_argument("--allow-different-data", action="store_true", help="Explicitly start a different-data experiment")

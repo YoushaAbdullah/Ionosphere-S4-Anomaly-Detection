@@ -1,30 +1,55 @@
-# Codex agent instructions — Ionosphere Q4 Paper
+# Codex project router — Ionosphere S4 research
 
-## Mandatory reading order
-At the start of EVERY task, before analysing, proposing, editing, testing or committing:
-1. Read this file completely.
-2. Read `Q4 Paper Code/CodeRules.md` completely.
-3. Read `Q4 Paper Code/ResearchRules.md` completely.
-4. Inspect only the relevant existing scripts, configuration, data schema and Git status.
-If either rules file is missing or inaccessible, stop and ask the user. Do not silently proceed.
+## Active experiment
 
-## Scope and authority
-- Work within this research project. Preserve existing code and results unless explicitly authorised.
-- First diagnose and report concrete issues, their evidence, priority, and proposed minimal fixes.
-- **Do not edit, create, delete, rename or move project files until the user approves the specific changes.** Implement only approved items.
-- Ask before changing scientific methodology, labels, features, evaluation splits, or reported results, even if a general coding change was approved.
-- Do not create unnecessary files or directories. Prefer small changes to existing files.
-- Do not automatically implement previously discussed ideas (GA, C4.5, time-series CV) without explicit approval.
-- If instructions conflict, stop and ask; follow higher-priority platform and user instructions.
+The canonical home of the OCC Study III project is:
 
-## Git safety and delivery
-- Before editing, inspect `git status` and the current branch; never overwrite or stage unrelated user changes.
-- Do not switch branches, force push, reset, rebase, merge or delete files without approval.
-- After approved changes, run relevant available checks and report exactly what ran and what could not run.
-- Show the changed-file list, meaningful diff summary, any scientific implications, and proposed commit message.
-- **Do not commit or push until the user explicitly approves.** On approval, stage only relevant files and create a focused, descriptive commit on the current branch. Push only with separate explicit approval.
-- Never commit raw research datasets, credentials, tokens, machine-specific paths, large generated artifacts or sensitive files without explicit approval.
-- Suggested commit messages: `fix: prevent temporal leakage in validation`, `refactor: simplify feature preprocessing`, `docs: document research validation protocol`.
+**`Q4 Paper Code/OCC_Esemble_Anomaly_Detection/`**
 
-## Completion report
-Summarise: issues found; approved actions taken; files changed; checks and results; limitations; Git status and commit hash (only if actually committed). Never fabricate execution or results.
+For any request about OCC ensembles, the 2019 S4 benchmark, `run_experiment.py`,
+its notebook, or its outputs, read in this order before analysing or changing files:
+
+1. This root `AGENTS.md`.
+2. `Q4 Paper Code/OCC_Esemble_Anomaly_Detection/AGENTS.md`.
+3. That folder's `CodeRules.md` and `ResearchRules.md`, completely.
+4. That folder's `README.md`; consult its dataset/reproduction guides as relevant.
+5. Relevant source/configuration, current branch, and `git status`.
+
+The nested rules contain the approved methodology, known limitations, commands,
+source-of-truth files, and project state. Do not rely on access to an earlier chat.
+If an applicable instruction file is missing, report it before changing the project.
+
+## Repository layout and workspace hygiene
+
+- Keep each experiment self-contained under its named directory in `Q4 Paper Code/`.
+- Keep its runner, notebook, dependency files, citation, docs, tests, local references,
+  and curated results together. Do not scatter experiment files at repository root.
+- Root files are limited to this router, the repository README, and shared Git/CI
+  configuration. GitHub workflows remain in `.github/workflows/` and explicitly
+  select the experiment working directory.
+- Put raw input in the experiment's ignored `data/`, fresh outputs in ignored
+  `runs/<unique-run>/`, and optional local environments in ignored `.venv/`.
+- Keep archived results immutable except explicitly approved documentation/audit
+  corrections. Never silently replace prior metrics with new output.
+- Do not remove unknown/untracked files, user data, or another experiment to make
+  the workspace look clean. Inspect first; relocate only task-related approved files.
+- After a move, update runtime paths, imports, docs/Colab links, CI, instruction
+  routing, and affected checksum manifests. Verify the documented entry points.
+- Use the conventional plural filename **`AGENTS.md`** for Codex discovery.
+  Do not create a duplicate `AGENT.md` or depend on chat history as project memory.
+
+## Authority and Git safety
+
+Diagnose concrete issues and explain the minimal fix. Implement only changes
+covered by the user's request/approval. Obtain approval before changing scientific
+methodology, labels, mandatory features, partitions, or reported results outside
+that scope. Existing authorization applies when it clearly covers the action;
+do not ask again for the same approved work.
+
+Inspect branch/status before editing. Preserve unrelated changes. Do not switch
+branches, reset, rebase, merge, delete user data, or force-push without approval.
+Do not commit or push without explicit authorization covering those actions.
+Stage only task-related files; never include credentials or raw data by accident.
+
+Report changed paths, checks actually run, scientific implications, limitations,
+Git status, a proposed commit message, and a commit hash only if a commit was made.

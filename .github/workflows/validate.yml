@@ -10,6 +10,9 @@ permissions:
 jobs:
   offline-validation:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Q4 Paper Code/OCC_Esemble_Anomaly_Detection
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

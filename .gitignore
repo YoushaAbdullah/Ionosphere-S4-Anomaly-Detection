@@ -15,3 +15,6 @@ q4_paper_results/
 .pytest_cache/
 *.jar
 *.class
+
+# Optional locally supplied paper; reference DOI is documented instead.
+Q4 Paper Code/OCC_Esemble_Anomaly_Detection/references/*.pdf

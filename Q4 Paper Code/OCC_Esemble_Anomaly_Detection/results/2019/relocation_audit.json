@@ -1,0 +1,39 @@
+{
+  "purpose": "Path/documentation reorganization; no scientific-code or historical numerical-result changes",
+  "previous_commit": "b5e8bfd75bff35ec03fb79f8a9158ae07b419368",
+  "current_experiment_root": "Q4 Paper Code/OCC_Esemble_Anomaly_Detection",
+  "previous_live_notebook": "Q4 Paper Code/scintillation_anomaly_detection.ipynb",
+  "current_live_notebook": "Q4 Paper Code/OCC_Esemble_Anomaly_Detection/scintillation_anomaly_detection.ipynb",
+  "previous_live_notebook_sha256": "2dfde35f547793a3a67bdebaba9ba81b8f6f837a2ff083dcfff19efa070eb657",
+  "current_live_notebook_sha256": "8ebeefffd3f8607fed7042ae35e8d8c46190893aa5c6d5dd0df4c5a26d444298",
+  "notebook_code_sha256_before": "96d822b3b91de0d75a2879f4f76cac0b229ae1c66668497cd0f6235a9c58c0a6",
+  "notebook_code_sha256_after": "96d822b3b91de0d75a2879f4f76cac0b229ae1c66668497cd0f6235a9c58c0a6",
+  "all_code_cells_unchanged": true,
+  "first_12_preparation_eda_cells_unchanged": true,
+  "dependency_lock_unchanged": true,
+  "dependency_lock_sha256": "e9bbab6c7646c29749466b631236ec7148eb4df38459b2c2bd6ca480f011888e",
+  "historical_artifacts_preserved_byte_for_byte": 71,
+  "historical_final_metrics_sha256": "e8e14b14aaebbcf9c31cf35a2697cf301e72dfc09eaa6af4b2e435450cea8dd7",
+  "time_series_cv": "existing TimeSeriesSplit(n_splits=5) on sorted unique development dates; unchanged",
+  "test_policy": "2019 historical benchmark retained; genuinely new data reserved for future untouched testing; no new test configured",
+  "checks": [
+    "Python syntax for runner, verifier, smoke test and every notebook code cell",
+    "All local Markdown links resolve; shared CI working directory and Git attributes updated",
+    "Pinned-runtime and real-archive preflight from repository root and unrelated cwd",
+    "Relocated runner actual-data preparation/EDA completed; 1,783,960 cleaned rows /584 positives",
+    "Relative output location verified inside experiment/runs; no repository-root output clutter",
+    "Reduced synthetic end-to-end workflow passed from relocated source",
+    "Historical numerical/source artifact byte hashes and dependency lock unchanged",
+    "Offline result artifact/invariant verifier passed after documentation checksum refresh",
+    "Documented --data data/2019.zip preflight passed from experiment root using unchanged local archive"
+  ],
+  "full_2019_models_rerun": false,
+  "new_independent_test_evaluated": false,
+  "historical_source_path_labels": "Preserved as historical provenance, not current executable paths",
+  "local_dataset": {
+    "path": "data/2019.zip",
+    "sha256": "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e",
+    "ignored_by_git": true,
+    "original_historical_source_preserved": true
+  }
+}
