@@ -1,5 +1,13 @@
 # Ionosphere S4 research
 
+A separate **[supervised imbalance-learning experiment](Q4%20Paper%20Code/Imbalanced_S4_Classification/README.md)**
+has been executed: class-weighted XGBoost, Balanced Random Forest and
+EasyEnsemble, with the same nine predictors and date protocol as OCC. All three
+use both classes for fitting. [Executed notebook, HTML and validation](Q4%20Paper%20Code/Imbalanced_S4_Classification/results/2019/README.md)
+are available; the final period is a historical holdout, not genuinely untouched.
+Its code and documentation are kept
+in its own directory, and the OCC benchmark below is unchanged.
+
 The active experiment is **[OCC Ensemble Anomaly Detection](Q4%20Paper%20Code/OCC_Esemble_Anomaly_Detection/README.md)**: a documented Study III adaptation comparing one-class models and ensembles on the 2019 SKN GNSS data.
 
 All experiment-specific code, locked dependencies, documentation, tests, local references, rules, and curated executed results live together in:

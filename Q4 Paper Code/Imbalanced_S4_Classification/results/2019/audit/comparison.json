@@ -1,0 +1,9 @@
+{
+  "occ_results": "/workspace/Ionosphere-S4-Anomaly-Detection/Q4 Paper Code/OCC_Esemble_Anomaly_Detection/results/2019",
+  "identical_fold_table": true,
+  "archive_sha256": "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e",
+  "preparation_sha256": "fb4720b2980e1976124f2971e3c41fa9a724167e47d012833821909ff2ddd236",
+  "occ_metrics_sha256": "e8e14b14aaebbcf9c31cf35a2697cf301e72dfc09eaa6af4b2e435450cea8dd7",
+  "reference_baseline_mismatches": 0,
+  "warning": "No independent event truth; no causal or algorithm-only superiority claim."
+}

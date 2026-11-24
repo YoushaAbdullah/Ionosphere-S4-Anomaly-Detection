@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "scientific_contract_tests": 5,
+  "model_api_synthetic_fits": "all three families passed",
+  "preflight": "original 2019 SHA256 and exact dependency versions passed",
+  "full_run": "completed, 33 both-class fits",
+  "recomputed_metric_rows": 12,
+  "verified_outcome_records": 3272904,
+  "notebook_images": 20,
+  "preparation_source_cells": "first twelve unchanged",
+  "holdout_status": "excluded from fitting/tuning; previously evaluated historical benchmark",
+  "commit_created": false,
+  "commands": [
+    ".venv/bin/python -m unittest discover -s tests -v",
+    ".venv/bin/python run_experiment.py --data ../OCC_Esemble_Anomaly_Detection/data/2019.zip --check-only",
+    ".venv/bin/python run_experiment.py --data ../OCC_Esemble_Anomaly_Detection/data/2019.zip --output runs/2019-both-class-20261124-01 --run",
+    ".venv/bin/python verify_run.py runs/2019-both-class-20261124-01"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "status": "completed",
+  "source": "imbalanced_s4_classification.ipynb",
+  "pipeline_sha256": "224287525f1a720837612964612397d271d946fbc4c48caec089bf94a5ba24b2",
+  "dependency_lock_sha256": "db93215bf93d26f3ea4ffd67e6c672ddfe8af6396082727e9916de9614c0a302",
+  "git_revision": "d2dadc095c8c65fea6c18f3dfa675ef02f624e77",
+  "git_status": " M ../../AGENTS.md\n M ../../README.md\n?? ./\n",
+  "historical_test": true,
+  "training_regime": "both classes",
+  "source_sha256": "117dc4f3d36e60bc28e0bbff47721ebdb218127e0c444708f1a427be89738985",
+  "input": {
+    "sha256": "e7b2e4882ac7c856d438b4e2210993c1a643af52abb6f59ca19c79afe175504e",
+    "matches_recorded_2019": true,
+    "bytes": 122198332,
+    "csv_files": 221
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "imbalanced-learn": "0.14.2",
+    "xgboost-cpu": "3.4.1",
+    "sklearn-compat": "0.1.6"
+  },
+  "adapters": [
+    "Colab upload/download",
+    "display and PNG capture"
+  ],
+  "cv_cache": "disabled; fresh folds",
+  "cells": [
+    {
+      "cell": 3,
+      "status": "completed",
+      "seconds": 8.449391774993273
+    },
+    {
+      "cell": 6,
+      "status": "completed",
+      "seconds": 6.549941253004363
+    },
+    {
+      "cell": 9,
+      "status": "completed",
+      "seconds": 4.851190469998983
+    },
+    {
+      "cell": 12,
+      "status": "completed",
+      "seconds": 26.979182779992698
+    },
+    {
+      "cell": 14,
+      "status": "completed",
+      "seconds": 0.042518351998296566
+    },
+    {
+      "cell": 15,
+      "status": "completed",
+      "seconds": 1162.5087204940064
+    },
+    {
+      "cell": 17,
+      "status": "completed",
+      "seconds": 0.3252707810024731
+    }
+  ],
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 3,
+      "prefix": "libscipy_openblas",
+      "filepath": "/workspace/Ionosphere-S4-Anomaly-Detection/Q4 Paper Code/Imbalanced_S4_Classification/.venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "df": {
+    "rows": 2733026
+  },
+  "df_clean": {
+    "rows": 1783960,
+    "label_counts": {
+      "0": 1783376,
+      "1": 584
+    }
+  },
+  "train_df": {
+    "rows": 1246808,
+    "label_counts": {
+      "0": 1246427,
+      "1": 381
+    }
+  },
+  "val_df": {
+    "rows": 264410,
+    "label_counts": {
+      "0": 264326,
+      "1": 84
+    }
+  },
+  "test_df": {
+    "rows": 272742,
+    "label_counts": {
+      "0": 272623,
+      "1": 119
+    }
+  }
+}

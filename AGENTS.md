@@ -24,6 +24,18 @@ If an applicable instruction file is missing, report it before changing the proj
 
 ## Repository layout and workspace hygiene
 
+For the separate **supervised imbalance-learning experiment**, read
+`Q4 Paper Code/Imbalanced_S4_Classification/PROJECT_CONTEXT.md` and its `README.md`.
+Its modelling source is `imbalance_pipeline.py`; the first twelve notebook cells
+are inherited unchanged from OCC. The owner requires the same nine predictors
+including Corrected_S4. Both-class fitting is a separate supervised regime, not
+a change to OCC. The owner approved execution with `2019.zip`; the both-class run
+completed November 24, 2026. Read its `results/2019/README.md` for executed outputs
+and validation. The final period was excluded from model fitting/tuning but is a
+previously evaluated historical holdout, not genuinely untouched data.
+For literature/manuscript work also follow the paper-writing guide
+linked above. Never infer a physical-event claim from S4-reference agreement.
+
 - Keep each experiment self-contained under its named directory in `Q4 Paper Code/`.
 - Keep its runner, notebook, dependency files, citation, docs, tests, local references,
   and curated results together. Do not scatter experiment files at repository root.

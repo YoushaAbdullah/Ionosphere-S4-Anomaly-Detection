@@ -1,0 +1,65 @@
+{
+  "selected": [
+    {
+      "name": "BRF_all_features",
+      "family": "BalancedRandomForest",
+      "max_features": null
+    },
+    {
+      "name": "Easy_depth2",
+      "family": "EasyEnsemble",
+      "depth": 2
+    },
+    {
+      "name": "XGB_sqrt_weight",
+      "family": "XGBoost",
+      "weight_power": 0.5
+    }
+  ],
+  "champion": "BRF_all_features",
+  "thresholds": {
+    "BRF_all_features": {
+      "Score_0.5": 0.5,
+      "CV_F1": 1.0,
+      "CV_F2": 1.0,
+      "CV_FPR_0.1pct": 0.1566666666666667
+    },
+    "Easy_depth2": {
+      "Score_0.5": 0.5,
+      "CV_F1": 0.8807970779778824,
+      "CV_F2": 0.8807970779778824,
+      "CV_FPR_0.1pct": 0.347681168808847
+    },
+    "XGB_sqrt_weight": {
+      "Score_0.5": 0.5,
+      "CV_F1": 0.9591034054756165,
+      "CV_F2": 0.7011948823928833,
+      "CV_FPR_0.1pct": 0.00019077151955571028
+    }
+  },
+  "primary_rule": "CV_FPR_0.1pct",
+  "config": {
+    "seed": 42,
+    "folds": 5,
+    "threads": 1,
+    "bootstrap_replicates": 1000,
+    "fpr_budget": 0.001
+  },
+  "features": [
+    "L1 CNo",
+    "L2 CNo",
+    "Azimuth_sin",
+    "Azimuth_cos",
+    "Elevation",
+    "Average of Carrier divergence",
+    "Corrected_S4",
+    "TEC at TOW",
+    "Sigma of Carrier Divergence"
+  ],
+  "training": "both classes",
+  "selection": "pooled five-fold development AP; lexical candidate ties",
+  "interpretation": "S4-reference reconstruction, not independent physical detection",
+  "test_status": "previously evaluated historical benchmark",
+  "development_identity_sha256": "ab4cc0886c5f4e6d3f806800b0cb903f6a8ad3533a7490c7cd59f6a559363127",
+  "final_identity_sha256": "8e53ee838d4d61b985247a6f1f275567b9bfcee0f293b3447db0d0de169a68e8"
+}
