@@ -11,8 +11,12 @@ its notebook, or its outputs, read in this order before analysing or changing fi
 
 1. This root `AGENTS.md`.
 2. `Q4 Paper Code/OCC_Esemble_Anomaly_Detection/PROJECT_CONTEXT.md`, completely.
-3. That folder's `README.md`; consult its dataset/reproduction guides as relevant.
-4. Relevant source/configuration, current branch, and `git status`.
+3. For manuscript planning/writing, literature reviews, research-direction advice,
+   or journal submissions, also read that folder's
+   `Q4_S4_Paper_Writing_Rules.md` completely. It contains journal requirements,
+   checked literature, writing standards, evidence limits and candidate directions.
+4. That folder's `README.md`; consult its dataset/reproduction guides as relevant.
+5. Relevant source/configuration, current branch, and `git status`.
 
 The project context guide contains the approved methodology, known limitations, commands,
 source-of-truth files, and project state. Do not rely on access to an earlier chat.

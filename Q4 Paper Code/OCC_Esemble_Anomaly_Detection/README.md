@@ -6,6 +6,8 @@ The objective is to measure how many observations meeting an S4 scintillation re
 
 [Source notebook](scintillation_anomaly_detection.ipynb) · [Executed notebook](results/2019/2019_study_iii_executed.ipynb) · [Results and provenance](results/2019/README.md) · [Reproduction guide](docs/REPRODUCIBILITY.md) · [Dataset details](docs/DATASET.md)
 
+[Paper-writing rules and research directions](Q4_S4_Paper_Writing_Rules.md) cover the target journal, recent publications, evidence limits, and the additional research needed for a strong manuscript.
+
 ## Dataset and objective
 
 `2019.zip` contains 221 daily GNSS CSV files. Its header identifies station **SKN (69.43, 20.38)**. The original loader retains observations by their actual dates, including 1 January 2020; it does not filter by the archive filename.

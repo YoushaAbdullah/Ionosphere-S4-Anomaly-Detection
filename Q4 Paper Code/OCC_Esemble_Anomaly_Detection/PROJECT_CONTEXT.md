@@ -27,6 +27,9 @@ it does not independently establish physical-event truth or advance forecasting.
 - `verify_results.py`: offline archived-result verifier and optional run comparison.
 - `tests/smoke_pipeline.py`: reduced synthetic end-to-end test, never paper evidence.
 - `references/`: DOI/reference information and optional ignored local paper PDF.
+- `Q4_S4_Paper_Writing_Rules.md`: journal-specific writing guidance, recent-paper
+  evidence, publication safeguards and proposed research directions. Read it for
+  manuscript/literature/journal work; proposals do not authorize scientific changes.
 
 ## Approved scientific configuration
 
