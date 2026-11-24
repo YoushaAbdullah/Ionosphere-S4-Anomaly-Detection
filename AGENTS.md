@@ -10,12 +10,11 @@ For any request about OCC ensembles, the 2019 S4 benchmark, `run_experiment.py`,
 its notebook, or its outputs, read in this order before analysing or changing files:
 
 1. This root `AGENTS.md`.
-2. `Q4 Paper Code/OCC_Esemble_Anomaly_Detection/AGENTS.md`.
-3. That folder's `CodeRules.md` and `ResearchRules.md`, completely.
-4. That folder's `README.md`; consult its dataset/reproduction guides as relevant.
-5. Relevant source/configuration, current branch, and `git status`.
+2. `Q4 Paper Code/OCC_Esemble_Anomaly_Detection/PROJECT_CONTEXT.md`, completely.
+3. That folder's `README.md`; consult its dataset/reproduction guides as relevant.
+4. Relevant source/configuration, current branch, and `git status`.
 
-The nested rules contain the approved methodology, known limitations, commands,
+The project context guide contains the approved methodology, known limitations, commands,
 source-of-truth files, and project state. Do not rely on access to an earlier chat.
 If an applicable instruction file is missing, report it before changing the project.
 
@@ -35,8 +34,10 @@ If an applicable instruction file is missing, report it before changing the proj
   the workspace look clean. Inspect first; relocate only task-related approved files.
 - After a move, update runtime paths, imports, docs/Colab links, CI, instruction
   routing, and affected checksum manifests. Verify the documented entry points.
-- Use the conventional plural filename **`AGENTS.md`** for Codex discovery.
-  Do not create a duplicate `AGENT.md` or depend on chat history as project memory.
+- Keep this root **`AGENTS.md`** as the only Codex instruction entry point.
+  Keep experiment-specific context, coding rules and research rules together in
+  its `PROJECT_CONTEXT.md`, and link it here. Do not create nested `AGENTS.md`
+  files, duplicate `AGENT.md` files or depend on chat history as project memory.
 
 ## Authority and Git safety
 

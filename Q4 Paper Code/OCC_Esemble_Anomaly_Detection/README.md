@@ -53,7 +53,7 @@ Browse [all 260 evaluation rows](results/2019/tables/final_test_metrics_all_mode
 
 ## Run locally
 
-This folder is the canonical experiment home. Read [AGENTS.md](AGENTS.md), [CodeRules.md](CodeRules.md), and [ResearchRules.md](ResearchRules.md) for the persistent project context and workspace rules. Codex uses the plural filename `AGENTS.md`; it does not require this chat to reconstruct the project.
+This folder is the canonical experiment home. Read [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) for the consolidated project context, coding rules, research rules, and workspace conventions. The repository-root [AGENTS.md](../../AGENTS.md) is the only Codex instruction entry point and explicitly directs Codex to that guide; this chat is not needed to reconstruct the project.
 
 Use **Python 3.12** (recorded: 3.12.14), a full **Java JDK 21** (recorded: 21.0.13), CPU, internet for package/Maven downloads, and sufficient RAM/disk. A GPU is unnecessary. Linux is the reference platform; macOS uses the same commands; Windows users should use WSL2. Allow at least 16 GB RAM and 3 GB free disk as a planning estimate, not a measured minimum. A full CPU run can take tens of minutes or longer.
 
@@ -135,7 +135,7 @@ For interactive viewing, the source notebook also has an [Open in Colab link](ht
 All paths below are relative to `Q4 Paper Code/OCC_Esemble_Anomaly_Detection`:
 
 ```text
-AGENTS.md / CodeRules.md / ResearchRules.md          # Persistent Codex context and rules
+PROJECT_CONTEXT.md                                 # Consolidated project, code and research rules
 scintillation_anomaly_detection.ipynb               # Scientific source
 run_experiment.py                                  # Portable execution and preflight
 requirements.in / requirements.txt                 # Recorded versions / hash lock

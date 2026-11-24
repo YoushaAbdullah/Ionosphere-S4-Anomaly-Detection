@@ -14,8 +14,8 @@ index, Codex router and shared Git/CI configuration. The runner finds its source
 notebook and dependency lock relative to its own file. Relative output paths stay
 inside the experiment directory even when it is launched from another directory.
 
-The root `AGENTS.md` points to the experiment's `AGENTS.md`, `CodeRules.md`, and
-`ResearchRules.md`. These files persist the objective, approved settings, known
+The root `AGENTS.md` is the only Codex instruction entry point and points to the
+experiment's single `PROJECT_CONTEXT.md` guide. This guide consolidates the objective, approved settings, known
 limitations, run commands and workspace rules for future Codex sessions. Open the
 same repository/version and reference this folder or its runner. This gives Codex
 project context; it does not import cloud-chat history into another application.
