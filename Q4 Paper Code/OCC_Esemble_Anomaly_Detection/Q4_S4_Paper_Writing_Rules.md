@@ -201,6 +201,23 @@ The single-contribution/reader-oriented principle is consistent with [Mensh and 
 11. **Edit in separate passes.** First fix scientific logic/evidence, then section order and paragraph connections, then terminology/grammar, and only then formatting. Fluent prose cannot rescue an unidentifiable claim or a circular validation target.
 12. **Human authors own every sentence.** Audit AI-assisted prose for invented mechanisms, stronger causal verbs, fabricated references and unsupported certainty. Record AI assistance according to current publisher policy.
 
+### 7.1 Mandatory scientific justification for every configuration choice
+
+**Whenever a configuration choice is written, state why it was chosen scientifically.** This applies to manuscript prose, parameter tables, captions, configuration summaries and explanatory code comments. Pair each choice with its rationale or a precise cross-reference to its documented rationale; a bare value or a vague reference to “the methods” is insufficient.
+
+For each choice, explain:
+
+- **What and why:** the exact setting and its role in the scientific question, measurement process or validation design.
+- **Evidence and provenance:** whether it follows physical/instrument guidance, eligible literature, development-only selection, reproduction of the reference paper, an author requirement or an implementation/compute constraint. Cite the actual supporting source or analysis where available, following Section 3.1.
+- **Assumptions and trade-offs:** why it is suitable for this task, which relevant alternative it replaces, and what it may sacrifice in bias, variance, coverage, detection, false alarms or computation.
+- **Validation status:** what sensitivity analysis or development evidence supports it, or explicitly that its suitability/optimality remains untested. Never imply that a proposed analysis has been performed.
+
+Cover all choices, including quality filters, reference thresholds, features, temporal folds, normal-only fitting, sample caps, imputation/scaling, PCA, K-means/GA/J48 settings, OCC hyperparameters, score normalization, ensemble aggregation, decision thresholds, evaluation metrics, uncertainty procedures and random seeds. A compact decision table may consolidate the detail using **choice/value → scientific rationale → evidence/provenance → alternatives/trade-offs → validation status**; refer to the relevant entry whenever the choice is repeated.
+
+“It is the default,” “the paper used it,” or “it gave the best result” is not a complete justification. Explain why a default is appropriate, whether a paper setting is retained specifically for methodological comparability, or how development-only selection used a prespecified objective without consulting the final test. For example, the 5,000-normal-row cap is a reproducible computational-budget choice; do not call it scientifically optimal without supporting sensitivity evidence. A fixed seed supports repeatability, not a claim that that particular number has physical significance.
+
+Do not invent a scientific motive for a historical choice. If the original rationale is unknown, say so and distinguish a plausible interpretation from documented intent. If a choice is an author constraint, reproduction requirement or practical compromise rather than an empirically validated scientific preference, state that honestly and explain the implications. This rule requires transparent explanation; it does not authorize changing the approved configuration or retrospectively rationalizing choices using final-test performance.
+
 ## 8. Manuscript architecture and figure-led argument
 
 Use journal-compatible headings; the outline below is a recommended research structure, not a claimed journal-mandated section list.
@@ -379,3 +396,4 @@ For every future manuscript request, Codex must:
 6. Verify numbers, references and journal formatting against the actual final manuscript before marking compliance complete.
 7. Enforce the Q1/Q2-or-highly-cited-significant citation eligibility audit; do not silently waive it or fabricate bibliometric evidence.
 8. Complete the visual-story and section-completeness audits, including detailed methodology, results, discussion, introduction, abstract and conclusion, without lowering rigor for the Q4 target.
+9. Whenever stating a configuration choice, supply its scientific rationale, provenance, assumptions/trade-offs and validation status, or precisely reference its decision-table entry; never fabricate a rationale or infer optimality from final-test results.
