@@ -1,7 +1,9 @@
 # Q4 S4 paper: research, argument and academic writing rules
 
-**Target:** Geomagnetism and Aeronomy, journal 11478, Pleiades/Springer Nature Link  
-**Sources checked:** November 24, 2026  
+**Target:** Geomagnetism and Aeronomy, journal 11478, Pleiades/Springer Nature Link
+
+**Sources checked:** November 24, 2026
+
 **Status:** evidence-based writing and research-planning guidance, not a completed manuscript or a declaration of submission compliance
 
 Read the repository-root `AGENTS.md` and [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) first. These rules supplement the approved scientific configuration; proposed studies below do **not** authorize changing code, labels, predictors, partitions or results. Preserve the 2019 benchmark. Obtain the research owner's approval before implementing a new experimental protocol.
